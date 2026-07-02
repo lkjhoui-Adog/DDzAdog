@@ -30,6 +30,7 @@ Verified launch line includes:
 - `@MichiganSurvival\Addons\MichiganSurvival.pbo` exists in the live server mod folder
 - `mpmissions\dayzOffline.MichiganSurvival\custom\MichiganSurvivalObjects.json` contains 1141 objects
 - `init.c` includes the terrain-snap static height fix using `ClippingInfo`
+- `init.c` also applies per-category ground clearances so roads stay flat, lamps/signs snap by their base, and houses/sheds sit slightly into the terrain instead of floating above it
 
 ## Runtime proof
 

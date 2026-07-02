@@ -91,6 +91,11 @@ class CustomMission: MissionServer
 		return type.Contains("Lamp_") || type.Contains("TrafficLights") || type.Contains("FuelStation_Sign");
 	}
 
+	bool IsMichiganSurvivalHouse(string type)
+	{
+		return type.Contains("house_");
+	}
+
 	float GetMichiganSurvivalFallbackYOffset(string type)
 	{
 		if (IsMichiganSurvivalRoad(type))
@@ -100,7 +105,7 @@ class CustomMission: MissionServer
 			return 0.02;
 
 		if (IsMichiganSurvivalSmallStatic(type))
-			return 0.25;
+			return 1.0;
 
 		if (type.Contains("airport"))
 			return 3.0;
@@ -114,9 +119,35 @@ class CustomMission: MissionServer
 		return 1.5;
 	}
 
+	float GetMichiganSurvivalBaseClearance(string type)
+	{
+		if (IsMichiganSurvivalSmallStatic(type))
+			return 0.04;
+
+		if (IsMichiganSurvivalHouse(type))
+			return -0.65;
+
+		if (type.Contains("airport_small_main"))
+			return -0.85;
+
+		if (type.Contains("airport_small_hangar"))
+			return -0.25;
+
+		if (type.Contains("Shed_Open"))
+			return -0.25;
+
+		if (type.Contains("BusStation"))
+			return 0.02;
+
+		if (type.Contains("City_FireStation") || type.Contains("FuelStation_Shed") || type.Contains("mobilelaboratory") || type.Contains("radio_building"))
+			return -0.2;
+
+		return -0.25;
+	}
+
 	bool ShouldSnapMichiganSurvivalBaseToSurface(string type)
 	{
-		return !IsMichiganSurvivalRoad(type) && !IsMichiganSurvivalWaterVisual(type) && !IsMichiganSurvivalSmallStatic(type);
+		return !IsMichiganSurvivalRoad(type) && !IsMichiganSurvivalWaterVisual(type);
 	}
 
 	void SpawnMichiganSurvivalObjects()
@@ -174,18 +205,19 @@ class CustomMission: MissionServer
 				vector clipInfo[2];
 				obj.ClippingInfo(clipInfo);
 				float clipMinY = clipInfo[0][1];
+				float baseClearance = GetMichiganSurvivalBaseClearance(item.name);
 
 				if (clipMinY < -0.02 && clipMinY > -20.0)
-					position[1] = surfaceY - clipMinY + 0.08;
+					position[1] = surfaceY - clipMinY + baseClearance;
 				else
 					position[1] = surfaceY + GetMichiganSurvivalFallbackYOffset(item.name);
 
 				obj.SetPosition(position);
 				obj.Update();
 
-				if (debugStatics < 16)
+				if (debugStatics < 48)
 				{
-					PrintFormat("[MichiganSurvival] Static height %1 surface %2 clipMinY %3 final %4", item.name, surfaceY, clipMinY, position.ToString(false));
+					PrintFormat("[MichiganSurvival] Static settle %1 surface %2 clipMinY %3 clearance %4 final %5", item.name, surfaceY, clipMinY, baseClearance, position.ToString(false));
 					debugStatics++;
 				}
 			}
