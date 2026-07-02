@@ -1,0 +1,241 @@
+[
+    {
+        "Name":  "CF",
+        "WorkshopID":  "1559212036",
+        "Enabled":  true,
+        "Type":  "Client",
+        "Installed":  "Yes",
+        "LoadOrder":  1,
+        "Dependencies":  [
+
+                         ],
+        "DependencyDetails":  [
+
+                              ],
+        "FolderName":  "CF",
+        "DependenciesCheckedUtc":  "2026-07-02T18:12:30.5639819Z",
+        "DependenciesCheckedSource":  "WorkshopPage"
+    },
+    {
+        "Name":  "Community-Online-Tools",
+        "WorkshopID":  "1564026768",
+        "Enabled":  true,
+        "Type":  "Client",
+        "Installed":  "Yes",
+        "LoadOrder":  2,
+        "Dependencies":  [
+                             "1559212036"
+                         ],
+        "DependencyDetails":  [
+                                  {
+                                      "Name":  "CF",
+                                      "WorkshopID":  "1559212036"
+                                  }
+                              ],
+        "FolderName":  "Community-Online-Tools",
+        "DependenciesCheckedUtc":  "2026-07-02T18:12:36.6173256Z",
+        "DependenciesCheckedSource":  "WorkshopPage"
+    },
+    {
+        "Name":  "Dabs Framework",
+        "WorkshopID":  "2545327648",
+        "Enabled":  true,
+        "Type":  "Client",
+        "Installed":  "Yes",
+        "LoadOrder":  3,
+        "Dependencies":  [
+
+                         ],
+        "DependencyDetails":  [
+
+                              ],
+        "FolderName":  "Dabs Framework",
+        "DependenciesCheckedUtc":  "2026-07-02T18:12:44.6880777Z",
+        "DependenciesCheckedSource":  "WorkshopPage"
+    },
+    {
+        "Name":  "DayZ-Expansion-Licensed",
+        "WorkshopID":  "2116157322",
+        "Enabled":  true,
+        "Type":  "Client",
+        "Installed":  "Yes",
+        "LoadOrder":  4,
+        "Dependencies":  [
+                             "1559212036",
+                             "2545327648"
+                         ],
+        "DependencyDetails":  [
+                                  {
+                                      "Name":  "CF",
+                                      "WorkshopID":  "1559212036"
+                                  },
+                                  {
+                                      "Name":  "Dabs Framework",
+                                      "WorkshopID":  "2545327648"
+                                  }
+                              ],
+        "FolderName":  "DayZ-Expansion-Licensed",
+        "DependenciesCheckedUtc":  "2026-07-02T18:12:55.9322105Z",
+        "DependenciesCheckedSource":  "WorkshopPage"
+    },
+    {
+        "Name":  "DayZ-Expansion-Bundle",
+        "WorkshopID":  "2572331007",
+        "Enabled":  true,
+        "Type":  "Client",
+        "Installed":  "Yes",
+        "LoadOrder":  5,
+        "Dependencies":  [
+                             "1559212036",
+                             "2545327648",
+                             "2116157322"
+                         ],
+        "DependencyDetails":  [
+                                  {
+                                      "Name":  "CF",
+                                      "WorkshopID":  "1559212036"
+                                  },
+                                  {
+                                      "Name":  "Dabs Framework",
+                                      "WorkshopID":  "2545327648"
+                                  },
+                                  {
+                                      "Name":  "DayZ-Expansion-Licensed",
+                                      "WorkshopID":  "2116157322"
+                                  }
+                              ],
+        "FolderName":  "DayZ-Expansion-Bundle",
+        "DependenciesCheckedUtc":  "2026-07-02T18:13:07.5982397Z",
+        "DependenciesCheckedSource":  "WorkshopPage"
+    },
+    {
+        "Name":  "BuilderItems",
+        "WorkshopID":  "1565871491",
+        "Enabled":  true,
+        "Type":  "Client",
+        "Installed":  "Yes",
+        "LoadOrder":  6,
+        "Dependencies":  [
+
+                         ],
+        "DependencyDetails":  [
+
+                              ],
+        "FolderName":  "BuilderItems",
+        "DependenciesCheckedUtc":  "2026-07-02T18:13:13.5506831Z",
+        "DependenciesCheckedSource":  "WorkshopPage"
+    },
+    {
+        "Name":  "DayZ-Editor",
+        "WorkshopID":  "2250764298",
+        "Enabled":  true,
+        "Type":  "Client",
+        "Installed":  "Yes",
+        "LoadOrder":  7,
+        "Dependencies":  [
+                             "1559212036",
+                             "2545327648"
+                         ],
+        "DependencyDetails":  [
+                                  {
+                                      "Name":  "CF",
+                                      "WorkshopID":  "1559212036"
+                                  },
+                                  {
+                                      "Name":  "Dabs Framework",
+                                      "WorkshopID":  "2545327648"
+                                  }
+                              ],
+        "FolderName":  "DayZ-Editor",
+        "DependenciesCheckedUtc":  "2026-07-02T18:13:19.8668334Z",
+        "DependenciesCheckedSource":  "WorkshopPage"
+    },
+    {
+        "Name":  "DayZ Editor Loader",
+        "WorkshopID":  "2276010135",
+        "Enabled":  true,
+        "Type":  "Client",
+        "Installed":  "Yes",
+        "LoadOrder":  8,
+        "Dependencies":  [
+                             "2545327648"
+                         ],
+        "DependencyDetails":  [
+                                  {
+                                      "Name":  "Dabs Framework",
+                                      "WorkshopID":  "2545327648"
+                                  }
+                              ],
+        "FolderName":  "DayZ Editor Loader",
+        "DependenciesCheckedUtc":  "2026-07-02T18:13:25.2030483Z",
+        "DependenciesCheckedSource":  "WorkshopPage"
+    },
+    {
+        "Name":  "MMG - Mightys Military Gear",
+        "WorkshopID":  "2663169692",
+        "Enabled":  true,
+        "Type":  "Client",
+        "Installed":  "Yes",
+        "LoadOrder":  9,
+        "Dependencies":  [
+
+                         ],
+        "DependencyDetails":  [
+
+                              ],
+        "FolderName":  "MMG - Mightys Military Gear",
+        "DependenciesCheckedUtc":  "2026-07-02T18:13:31.0979336Z",
+        "DependenciesCheckedSource":  "WorkshopPage"
+    },
+    {
+        "Name":  "DDz Gear Pack",
+        "WorkshopID":  "3570678415",
+        "Enabled":  true,
+        "Type":  "Client",
+        "Installed":  "Yes",
+        "LoadOrder":  10,
+        "Dependencies":  [
+
+                         ],
+        "DependencyDetails":  [
+
+                              ],
+        "FolderName":  "DDz Gear Pack",
+        "DependenciesCheckedUtc":  "2026-07-02T18:04:54.7071670Z",
+        "DependenciesCheckedSource":  "WorkshopPage"
+    },
+    {
+        "Name":  "TeddysWeaponPack",
+        "WorkshopID":  "2202288946",
+        "Enabled":  true,
+        "Type":  "Client",
+        "Installed":  "Yes",
+        "LoadOrder":  11,
+        "Dependencies":  [
+
+                         ],
+        "DependencyDetails":  [
+
+                              ],
+        "FolderName":  "TeddysWeaponPack",
+        "DependenciesCheckedUtc":  "2026-07-02T18:04:56.6373499Z",
+        "DependenciesCheckedSource":  "WorkshopPage"
+    },
+    {
+        "Name":  "MichiganSurvival",
+        "WorkshopID":  "",
+        "Enabled":  true,
+        "Type":  "Client",
+        "Installed":  "Yes",
+        "LoadOrder":  12,
+        "Dependencies":  [
+
+                         ],
+        "DependencyDetails":  [
+
+                              ],
+        "FolderName":  "MichiganSurvival",
+        "DependenciesCheckedUtc":  "",
+        "DependenciesCheckedSource":  "Local"
+    }
+]

@@ -1,0 +1,75 @@
+{
+  "terrainName": "MichiganSurvival",
+  "prototypeName": "Traverse City 10km Prototype",
+  "crs": "EPSG:32616",
+  "sizeMeters": 10000,
+  "centerWgs84": {
+    "name": "Traverse City, Michigan",
+    "latitude": 44.7631,
+    "longitude": -85.6206
+  },
+  "centerUtm16n": {
+    "easting": 609164.9916601158,
+    "northing": 4957559.794703178
+  },
+  "boundsUtm16n": {
+    "west": 604164.9916601158,
+    "south": 4952559.794703178,
+    "east": 614164.9916601158,
+    "north": 4962559.794703178
+  },
+  "heightmap": {
+    "floatTiff": "terrain/exports/utm16n/heightmap/michigan_survival_traverse_10km_utm16n_float.tif",
+    "heightPng16": "terrain/exports/utm16n/heightmap/michigan_survival_traverse_10km_utm16n_height_4096.png",
+    "previewPng": "terrain/exports/utm16n/heightmap/michigan_survival_traverse_10km_utm16n_height_preview.png",
+    "rasterSize": 4096,
+    "pixelSizeMeters": 2.44140625,
+    "elevationMeters": {
+      "min": 176.19879150390625,
+      "max": 336.24896240234375,
+      "range": 160.0501708984375
+    },
+    "transform": [
+      2.44140625,
+      0.0,
+      604164.9916601158,
+      0.0,
+      -2.44140625,
+      4962559.794703178
+    ]
+  },
+  "masks": {
+    "water": {
+      "path": "terrain/exports/utm16n/masks/water_mask_4096.png",
+      "geoTiff": "terrain/exports/utm16n/masks/water_mask_4096_utm16n.tif",
+      "nonzeroPixels": 2754542
+    },
+    "woods": {
+      "path": "terrain/exports/utm16n/masks/woods_mask_4096.png",
+      "geoTiff": "terrain/exports/utm16n/masks/woods_mask_4096_utm16n.tif",
+      "nonzeroPixels": 0
+    },
+    "roads": {
+      "path": "terrain/exports/utm16n/masks/roads_mask_4096.png",
+      "geoTiff": "terrain/exports/utm16n/masks/roads_mask_4096_utm16n.tif",
+      "nonzeroPixels": 396091
+    },
+    "farmland": {
+      "path": "terrain/exports/utm16n/masks/farmland_mask_4096.png",
+      "geoTiff": "terrain/exports/utm16n/masks/farmland_mask_4096_utm16n.tif",
+      "nonzeroPixels": 0
+    },
+    "urban": {
+      "path": "terrain/exports/utm16n/masks/urban_mask_4096.png",
+      "geoTiff": "terrain/exports/utm16n/masks/urban_mask_4096_utm16n.tif",
+      "nonzeroPixels": 0
+    }
+  },
+  "vectorLayerFeatureCounts": {
+    "roads": 916,
+    "waterways": 39,
+    "water_polygons": 11,
+    "woods": 0,
+    "landuse": 0
+  }
+}

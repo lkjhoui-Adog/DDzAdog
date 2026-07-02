@@ -1,0 +1,16 @@
+{
+  "terrainName": "MichiganSurvival",
+  "prototypeName": "Traverse City 10km Prototype",
+  "sizeKm": 10,
+  "center": {
+    "name": "Traverse City, Michigan",
+    "latitude": 44.7631,
+    "longitude": -85.6206
+  },
+  "bboxWgs84": {
+    "south": 44.71813,
+    "west": -85.68388,
+    "north": 44.80807,
+    "east": -85.55732
+  }
+}

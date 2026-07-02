@@ -1,0 +1,12 @@
+{
+  "sourceAsc": "C:\\Users\\Adog\\Documents\\dayZ map of Michigan\\terrain\\terrain-builder\\MichiganSurvival\\source\\michigan_survival_height_4096.asc",
+  "sourceWaterMask": "C:\\Users\\Adog\\Documents\\dayZ map of Michigan\\terrain\\exports\\utm16n\\masks\\water_mask_4096.png",
+  "waterLevelSubtractedMeters": 176.55799865722656,
+  "outputAsc": "michigan_survival_height_4096_water_carved.asc",
+  "carvedElevationMeters": {
+    "min": -6.0,
+    "max": 159.6909942626953,
+    "waterPixelMax": -2.0,
+    "landPixelMin": 0.3499999940395355
+  }
+}

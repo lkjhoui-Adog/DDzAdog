@@ -1,0 +1,11 @@
+{
+  "type": "FeatureCollection",
+  "name": "woods_utm16n_clipped",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:32616"
+    }
+  },
+  "features": []
+}

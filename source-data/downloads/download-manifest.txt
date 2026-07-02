@@ -1,0 +1,18 @@
+Project: MichiganSurvival
+Prototype: Traverse City 20km Prototype
+Center: 44.7631, -85.6206
+Size: 20 km x 20 km
+BBOX WGS84: south=44.67317, west=-85.74715, north=44.85303, east=-85.49405
+
+USGS TNM DEM product query:
+https://tnmaccess.nationalmap.gov/api/v1/products?datasets=National%20Elevation%20Dataset%20(NED)%201%2F3%20arc-second&bbox=-85.74715,44.67317,-85.49405,44.85303&prodFormats=GeoTIFF&outputFormat=JSON
+
+Overpass endpoint:
+https://overpass.kumi.systems/api/interpreter
+
+Generated Overpass query:
+C:\Users\Adog\Documents\dayZ map of Michigan\tools\..\source-data\downloads\overpass-query.ql
+
+Expected output files after download:
+C:\Users\Adog\Documents\dayZ map of Michigan\tools\..\source-data\downloads\usgs-tnm-dem-products.json
+C:\Users\Adog\Documents\dayZ map of Michigan\tools\..\source-data\downloads\traverse-city-osm-roads-water.json

@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "name": "prototype_bounds_utm16n",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:32616"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MichiganSurvival Traverse City 10km UTM Bounds"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              614164.9916601158,
+              4952559.794703178
+            ],
+            [
+              614164.9916601158,
+              4962559.794703178
+            ],
+            [
+              604164.9916601158,
+              4962559.794703178
+            ],
+            [
+              604164.9916601158,
+              4952559.794703178
+            ],
+            [
+              614164.9916601158,
+              4952559.794703178
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

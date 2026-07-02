@@ -1,0 +1,11 @@
+{
+  "type": "FeatureCollection",
+  "name": "landuse_utm16n_clipped",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:32616"
+    }
+  },
+  "features": []
+}

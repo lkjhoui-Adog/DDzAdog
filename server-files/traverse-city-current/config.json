@@ -1,0 +1,53 @@
+{
+    "FolderName":  "Traverse City, MI",
+    "Created":  "7/2/2026 2:01:13 PM",
+    "ServerPath":  "C:\\Users\\Adog\\AppData\\Local\\MI Server Manager\\servers\\Traverse City, MI",
+    "Config":  "C:\\Users\\Adog\\AppData\\Local\\MI Server Manager\\servers\\Traverse City, MI\\serverDZ.cfg",
+    "Profiles":  "C:\\Users\\Adog\\AppData\\Local\\MI Server Manager\\servers\\Traverse City, MI\\profiles",
+    "ServerIP":  "127.0.0.1",
+    "Port":  2302,
+    "ClientPort":  2304,
+    "SteamQueryPort":  27016,
+    "RCONPort":  2306,
+    "RCONPassword":  "PsBLRrZiYjpBUsaoMYrbxrh6",
+    "CPUCount":  4,
+    "ProcessPriority":  "High",
+    "MaxMemoryMB":  8192,
+    "LogRetentionDays":  30,
+    "RestartIntervalHours":  4,
+    "AutoStart":  false,
+    "AutoRestart":  false,
+    "AutoUpdate":  false,
+    "UpdateCheckMinutes":  30,
+    "LastBackup":  "Never",
+    "LastRestore":  "Never",
+    "LastStartup":  "07/02/26 - 04:36 PM",
+    "LastUpdate":  "07/02/26 - 02:14 PM",
+    "LastUpdateCheck":  "7/2/2026 2:10:02 PM",
+    "PlayerLoginAnnouncements":  [
+
+                                 ],
+    "AdminAnnounceNames":  [
+
+                           ],
+    "AdminAnnounceMessage":  "",
+    "VipAnnounceNames":  [
+
+                         ],
+    "VipAnnounceMessage":  "",
+    "DiscordWebhook":  "",
+    "DiscordKillfeedWebhook":  "",
+    "DiscordPlayerWebhook":  "",
+    "DiscordChatWebhook":  "",
+    "DiscordReportsWebhook":  "",
+    "DiscordModsWebhook":  "",
+    "DiscordUpdatesWebhook":  "",
+    "StatusUpdateMinutes":  60,
+    "DiscordShowConnectionInfo":  true,
+    "DiscordSimpleMessages":  false,
+    "DiscordShowSteamProfiles":  true,
+    "DiscordShowPlayerServerIds":  true,
+    "DiscordShowDeathLocation":  true,
+    "DiscordShowAiVsAiKillfeed":  false,
+    "CardId":  1
+}

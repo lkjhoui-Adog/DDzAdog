@@ -1,0 +1,62 @@
+﻿[
+    {
+        "relativePath":  "build\\@MichiganSurvival\\Addons\\MichiganSurvival.pbo",
+        "bytes":  5331517,
+        "lastWriteTime":  "2026-07-01T11:18:22",
+        "sha256":  "5E947FDCFE3607A700EDA46800123D3CD9666C691FF8C41877D6057D7115FB1D"
+    },
+    {
+        "relativePath":  "build\\@MichiganSurvival\\Addons\\MichiganSurvival.pbo.MichiganSurvival.bisign",
+        "bytes":  569,
+        "lastWriteTime":  "2026-07-01T11:18:22",
+        "sha256":  "1E60B677533CE5E640C675334C07262367861E37D7219308FF98F0419B54AD2B"
+    },
+    {
+        "relativePath":  "build\\@MichiganSurvival\\Keys\\MichiganSurvival.bikey",
+        "bytes":  169,
+        "lastWriteTime":  "2026-07-01T06:32:59",
+        "sha256":  "70D1B2D0E29E68F6DC10F1926D586C39413D1B594BC4D827A48BE5E887A13CDC"
+    },
+    {
+        "relativePath":  "build\\@MichiganSurvival\\mod.cpp",
+        "bytes":  250,
+        "lastWriteTime":  "2026-07-01T06:32:48",
+        "sha256":  "61C53D25B6492956CA009CEB60515143F732F63AC616CD37E136F39ACE6F1DD9"
+    },
+    {
+        "relativePath":  "workdrive\\MichiganSurvival\\world\\MichiganSurvival.wrp",
+        "bytes":  1588598,
+        "lastWriteTime":  "2026-07-01T06:27:29",
+        "sha256":  "A549EBADDF71E799D2D5227455A1F2C5033053F49DA414B5E2E691ABF488DE7B"
+    },
+    {
+        "relativePath":  "workdrive\\MichiganSurvival\\config.cpp",
+        "bytes":  1182,
+        "lastWriteTime":  "2026-07-01T11:17:20",
+        "sha256":  "95E53D3248B5C84CD98D4A4BF61FAF5D2CDAE82535DC14EEBF36EEBAB2A29A38"
+    },
+    {
+        "relativePath":  "server-files\\adog-current\\serverDZ.cfg",
+        "bytes":  5821,
+        "lastWriteTime":  "2026-07-01T11:58:51",
+        "sha256":  "75E2F06E7538EEC96196A823C801DB62FA42ABF66D10F976F3CA57D891636307"
+    },
+    {
+        "relativePath":  "server-files\\adog-current\\Launch Adog Michigan DayZ.cmd",
+        "bytes":  709,
+        "lastWriteTime":  "2026-07-01T16:48:08",
+        "sha256":  "781FF0B85502FEF9872078104805107D8149500746405D56BB08A043BA90D2CD"
+    },
+    {
+        "relativePath":  "server-files\\adog-current\\dayz-launcher\\Local.json",
+        "bytes":  264,
+        "lastWriteTime":  "2026-07-01T16:56:33",
+        "sha256":  "290A15F6E3F45849A0A533E2EC009E382B7B7A60AF9AB2254C1EB6F1042AC60F"
+    },
+    {
+        "relativePath":  "server-files\\adog-current\\dayz-launcher\\dayz.defaultpreset2",
+        "bytes":  612,
+        "lastWriteTime":  "2026-07-01T16:56:33",
+        "sha256":  "CFAEE9D180ED5174094221AB504A0AC14A164694BCA4CFE0F92DA6D1D739B892"
+    }
+]

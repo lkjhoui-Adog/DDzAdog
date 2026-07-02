@@ -1,0 +1,14 @@
+﻿{
+    "generatedAt":  "2026-07-01T21:21:24",
+    "serverRoot":  "C:\\Users\\Adog\\Documents\\MI-Server-Manager-2026.05.21.1455\\servers\\Adog",
+    "latestServerRpt":  "C:\\Users\\Adog\\Documents\\MI-Server-Manager-2026.05.21.1455\\servers\\Adog\\profiles\\DayZServer_x64_2026-07-01_16-53-24.RPT",
+    "dayZServerProcess":  {
+
+                          },
+    "intendedModOrder":  "@CF;@Community-Online-Tools;@Dabs Framework;@DayZ-Expansion-Licensed;@DayZ-Expansion-Bundle;@BuilderItems;@DayZ-Editor;@DayZ Editor Loader;@MMG - Mightys Military Gear;@DDz Gear Pack;@TeddysWeaponPack;@MichiganSurvival",
+    "notes":  [
+                  "Do not back up the full DayZ server install or full Workshop mods to GitHub.",
+                  "MichiganSurvival custom mod and launcher registration were the key local changes.",
+                  "Expansion/Dabs server PBO mismatches were resynced from the local DayZ client install."
+              ]
+}

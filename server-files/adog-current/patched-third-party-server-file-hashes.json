@@ -1,0 +1,146 @@
+﻿[
+    {
+        "serverRelativePath":  "@Dabs Framework\\addons\\Scripts.pbo",
+        "bytes":  702504,
+        "lastWriteTime":  "2026-05-31T14:00:20",
+        "sha256":  "2EAAF820A468134BB05BF7B5F4BA25F2B0F12D5EC66FC158D91A5747CB4C2843"
+    },
+    {
+        "serverRelativePath":  "@Dabs Framework\\addons\\Scripts.pbo.dab.bisign",
+        "bytes":  556,
+        "lastWriteTime":  "2026-05-31T14:00:24",
+        "sha256":  "B1410018A63EE70B8FE9F3512569931EA0E31F77D8631DC42691DFCA0E204F95"
+    },
+    {
+        "serverRelativePath":  "@Dabs Framework\\addons\\GUI.pbo",
+        "bytes":  33430956,
+        "lastWriteTime":  "2026-05-31T14:00:20",
+        "sha256":  "DCAB832D232AFA22B3FEEC050EFAC8811988CA7666DD21A834D0190F3695E24E"
+    },
+    {
+        "serverRelativePath":  "@Dabs Framework\\addons\\GUI.pbo.dab.bisign",
+        "bytes":  556,
+        "lastWriteTime":  "2026-05-31T14:00:23",
+        "sha256":  "BF4B989984FA6A190122D5A06749C9CAFF5581C2E59098F1FECD770240C07F3C"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Licensed\\addons\\vehicles_air_merlin.pbo",
+        "bytes":  66189046,
+        "lastWriteTime":  "2026-05-30T09:25:59",
+        "sha256":  "92B9990EBBFCFB117555DFCFC8E4972FAA41FD5B5ED705A45FEED4BFAFC6D013"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Licensed\\addons\\vehicles_air_merlin.pbo.expansion.bisign",
+        "bytes":  562,
+        "lastWriteTime":  "2026-05-30T09:26:02",
+        "sha256":  "74FE3026684ECF480A3A9A96A35F045C8169C60E8C4F89D8C0A3A9665EE25736"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Licensed\\addons\\sounds_vehicles_air_mh6.pbo",
+        "bytes":  4791111,
+        "lastWriteTime":  "2026-05-30T09:25:59",
+        "sha256":  "0DB47C96EB2904057273BBB770F90B02657FDCF5506BF2716702C70DED0EB29C"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Licensed\\addons\\sounds_vehicles_air_mh6.pbo.expansion.bisign",
+        "bytes":  562,
+        "lastWriteTime":  "2026-05-30T09:26:02",
+        "sha256":  "17DFE454E75BEC9567B60981F3430918453B3B891DA147401D29E19AA8E4D02A"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Bundle\\addons\\ai_scripts.pbo",
+        "bytes":  3420225,
+        "lastWriteTime":  "2026-05-30T09:25:59",
+        "sha256":  "91643C6AC008F6A244D3CECFD6E0AF9827A48E234F46264B0C5EE44FDFD872E4"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Bundle\\addons\\ai_scripts.pbo.expansion.bisign",
+        "bytes":  562,
+        "lastWriteTime":  "2026-05-30T09:26:01",
+        "sha256":  "D473CB1806C77B2333BF50B0D1336B8558B5B19FD34C462091E5EF662B62FBC9"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Bundle\\addons\\core_scripts.pbo",
+        "bytes":  1621547,
+        "lastWriteTime":  "2026-05-30T09:25:59",
+        "sha256":  "F1FA05F2EC1E9EDAF95AE1BC4F1634F786CDF2A03E60947B8FB5CF511D032C91"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Bundle\\addons\\core_scripts.pbo.expansion.bisign",
+        "bytes":  562,
+        "lastWriteTime":  "2026-05-30T09:26:01",
+        "sha256":  "02A70BDEEF0EC94F454BB6F966BB0BF72DD52B7DE5FECEA46FB3749DAA093DD2"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Bundle\\addons\\languagecore_core.pbo",
+        "bytes":  208344,
+        "lastWriteTime":  "2026-05-30T09:26:01",
+        "sha256":  "0296FCC2D33906D962C6EAE4A0D3227A0C5AB6B98A9A9D27B2F461D0AF658460"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Bundle\\addons\\languagecore_core.pbo.expansion.bisign",
+        "bytes":  562,
+        "lastWriteTime":  "2026-05-30T09:26:01",
+        "sha256":  "8B4700F7CAE07D7E3F9F6D62A9F6901F58102461AC3AC4C65334F18AB6E6B04C"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Bundle\\addons\\languagecore_vehicles.pbo",
+        "bytes":  80704,
+        "lastWriteTime":  "2026-05-30T09:26:01",
+        "sha256":  "31CEE1C280289A7E31E3F5F5BBDC527A60187392F57914CF003388F205398573"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Bundle\\addons\\languagecore_vehicles.pbo.expansion.bisign",
+        "bytes":  562,
+        "lastWriteTime":  "2026-05-30T09:26:01",
+        "sha256":  "B672DD0420BD4A84190EEAE52CF5BC095D12F7263B0577717E0E42386321FB89"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Bundle\\addons\\vehicles_air_gyro.pbo",
+        "bytes":  37720140,
+        "lastWriteTime":  "2026-05-30T09:25:59",
+        "sha256":  "D094B758714EEC26885FDFF63A572B09E04B2E8FC45E3951C541DBB945C5AC60"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Bundle\\addons\\vehicles_air_gyro.pbo.expansion.bisign",
+        "bytes":  562,
+        "lastWriteTime":  "2026-05-30T09:26:01",
+        "sha256":  "423C0E3E528779F132ED21BDC2A8B3BA1C78A85ED0A638E530DB74F0B8DC1EE8"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Bundle\\addons\\vehicles_gui.pbo",
+        "bytes":  536547,
+        "lastWriteTime":  "2026-05-30T09:25:59",
+        "sha256":  "11C50F13E1F8F6C0C10C20C7CE3CA48B542CC87D280F5A4EFC4E9E1600D32C6A"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Bundle\\addons\\vehicles_gui.pbo.expansion.bisign",
+        "bytes":  562,
+        "lastWriteTime":  "2026-05-30T09:26:01",
+        "sha256":  "009C5C58D86AA4120709FFEFE6214A0813AE07930C831CFA35AB8B39A5546A71"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Bundle\\addons\\vehicles_scripts.pbo",
+        "bytes":  1035613,
+        "lastWriteTime":  "2026-06-03T18:28:01",
+        "sha256":  "6EDC5BA8B0B00A5753DA53DB8607C92F8753353AD6A7D41B0B67F134A8C90705"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Bundle\\addons\\vehicles_scripts.pbo.expansion.bisign",
+        "bytes":  562,
+        "lastWriteTime":  "2026-06-03T18:28:03",
+        "sha256":  "410110A2FC28F04B174ED866FBF8FAD31E97FC8FFF2A382AD2EFD35EE4D2A286"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Bundle\\addons\\0_core_preload.pbo",
+        "bytes":  15813,
+        "lastWriteTime":  "2026-05-30T09:26:01",
+        "sha256":  "2A2B333B809A386580FC3217FFA54852FA7E1E12EA1B80115087260FA842D8F2"
+    },
+    {
+        "serverRelativePath":  "@DayZ-Expansion-Bundle\\addons\\0_core_preload.pbo.expansion.bisign",
+        "bytes":  562,
+        "lastWriteTime":  "2026-05-30T09:26:01",
+        "sha256":  "E9EFBC9F04338C9F3D6F7A66E155B820744CE40217C655C31595BDEAAFBDD1C9"
+    }
+]
