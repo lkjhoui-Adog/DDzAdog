@@ -128,10 +128,10 @@ class CustomMission: MissionServer
 			return 0.04;
 
 		if (type.Contains("FuelStation_Shed"))
-			return 0.35;
+			return -0.2;
 
 		if (IsMichiganSurvivalHouse(type))
-			return -0.65;
+			return -1.45;
 
 		if (type.Contains("airport_small_main"))
 			return -0.85;
@@ -169,7 +169,7 @@ class CustomMission: MissionServer
 			return 10.0;
 
 		if (IsMichiganSurvivalHouse(type))
-			return 5.5;
+			return 2.5;
 
 		if (type.Contains("Shed_Open"))
 			return 4.5;
