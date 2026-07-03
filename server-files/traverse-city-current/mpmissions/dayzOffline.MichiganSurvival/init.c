@@ -128,16 +128,19 @@ class CustomMission: MissionServer
 			return 0.04;
 
 		if (type.Contains("FuelStation_Shed"))
-			return -0.2;
-
-		if (IsMichiganSurvivalHouse(type))
-			return -1.45;
-
-		if (type.Contains("airport_small_main"))
 			return -0.85;
 
+		if (type.Contains("airport_small_main"))
+			return -1.55;
+
 		if (type.Contains("airport_small_hangar"))
-			return -0.25;
+			return -0.95;
+
+		if (type.Contains("house_1w02_blue"))
+			return -1.45;
+
+		if (IsMichiganSurvivalHouse(type))
+			return -2.05;
 
 		if (type.Contains("Shed_Open"))
 			return -0.25;
@@ -232,7 +235,7 @@ class CustomMission: MissionServer
 		if (debugCount < 48)
 			return true;
 
-		return type.Contains("FuelStation") || type.Contains("Lamp_") || type.Contains("TrafficLights") || type.Contains("FireStation") || type.Contains("mobilelaboratory") || type.Contains("radio_building") || type.Contains("airport_small_hangar") || type.Contains("BusStation_wall") || type.Contains("BusStation_roof_long");
+		return type.Contains("FuelStation") || type.Contains("Lamp_") || type.Contains("TrafficLights") || type.Contains("FireStation") || type.Contains("mobilelaboratory") || type.Contains("radio_building") || type.Contains("airport_small_main") || type.Contains("airport_small_hangar") || type.Contains("house_1w01") || type.Contains("house_1w02_blue") || type.Contains("house_2w01") || type.Contains("BusStation_wall") || type.Contains("BusStation_roof_long");
 	}
 
 	bool ShouldSnapMichiganSurvivalBaseToSurface(string type)
