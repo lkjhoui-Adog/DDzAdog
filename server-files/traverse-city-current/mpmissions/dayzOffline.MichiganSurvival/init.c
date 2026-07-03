@@ -121,8 +121,14 @@ class CustomMission: MissionServer
 
 	float GetMichiganSurvivalBaseClearance(string type)
 	{
+		if (type.Contains("FuelStation_Sign"))
+			return 0.12;
+
 		if (IsMichiganSurvivalSmallStatic(type))
 			return 0.04;
+
+		if (type.Contains("FuelStation_Shed"))
+			return 0.35;
 
 		if (IsMichiganSurvivalHouse(type))
 			return -0.65;
@@ -143,6 +149,90 @@ class CustomMission: MissionServer
 			return -0.2;
 
 		return -0.25;
+	}
+
+	float GetMichiganSurvivalSurfaceSampleRadius(string type)
+	{
+		if (IsMichiganSurvivalSmallStatic(type))
+			return 0.0;
+
+		if (type.Contains("FuelStation_Shed"))
+			return 10.0;
+
+		if (type.Contains("City_FireStation"))
+			return 9.0;
+
+		if (type.Contains("airport_small_hangar"))
+			return 12.0;
+
+		if (type.Contains("airport_small_main"))
+			return 10.0;
+
+		if (IsMichiganSurvivalHouse(type))
+			return 5.5;
+
+		if (type.Contains("Shed_Open"))
+			return 4.5;
+
+		if (type.Contains("radio_building") || type.Contains("mobilelaboratory"))
+			return 5.0;
+
+		if (type.Contains("BusStation"))
+			return 3.0;
+
+		return 4.0;
+	}
+
+	float GetMichiganSurvivalPlacementSurfaceY(string type, float x, float z)
+	{
+		float radius = GetMichiganSurvivalSurfaceSampleRadius(type);
+		float maxY = GetGame().SurfaceY(x, z);
+
+		if (radius <= 0.01)
+			return maxY;
+
+		float halfRadius = radius * 0.5;
+		float sampleY = GetGame().SurfaceY(x + radius, z);
+		if (sampleY > maxY)
+			maxY = sampleY;
+
+		sampleY = GetGame().SurfaceY(x - radius, z);
+		if (sampleY > maxY)
+			maxY = sampleY;
+
+		sampleY = GetGame().SurfaceY(x, z + radius);
+		if (sampleY > maxY)
+			maxY = sampleY;
+
+		sampleY = GetGame().SurfaceY(x, z - radius);
+		if (sampleY > maxY)
+			maxY = sampleY;
+
+		sampleY = GetGame().SurfaceY(x + halfRadius, z + halfRadius);
+		if (sampleY > maxY)
+			maxY = sampleY;
+
+		sampleY = GetGame().SurfaceY(x - halfRadius, z + halfRadius);
+		if (sampleY > maxY)
+			maxY = sampleY;
+
+		sampleY = GetGame().SurfaceY(x + halfRadius, z - halfRadius);
+		if (sampleY > maxY)
+			maxY = sampleY;
+
+		sampleY = GetGame().SurfaceY(x - halfRadius, z - halfRadius);
+		if (sampleY > maxY)
+			maxY = sampleY;
+
+		return maxY;
+	}
+
+	bool ShouldLogMichiganSurvivalSettle(string type, int debugCount)
+	{
+		if (debugCount < 48)
+			return true;
+
+		return type.Contains("FuelStation") || type.Contains("Lamp_") || type.Contains("TrafficLights") || type.Contains("FireStation") || type.Contains("mobilelaboratory") || type.Contains("radio_building") || type.Contains("airport_small_hangar") || type.Contains("BusStation_wall") || type.Contains("BusStation_roof_long");
 	}
 
 	bool ShouldSnapMichiganSurvivalBaseToSurface(string type)
@@ -206,18 +296,19 @@ class CustomMission: MissionServer
 				obj.ClippingInfo(clipInfo);
 				float clipMinY = clipInfo[0][1];
 				float baseClearance = GetMichiganSurvivalBaseClearance(item.name);
+				float placementSurfaceY = GetMichiganSurvivalPlacementSurfaceY(item.name, position[0], position[2]);
 
 				if (clipMinY < -0.02 && clipMinY > -20.0)
-					position[1] = surfaceY - clipMinY + baseClearance;
+					position[1] = placementSurfaceY - clipMinY + baseClearance;
 				else
-					position[1] = surfaceY + GetMichiganSurvivalFallbackYOffset(item.name);
+					position[1] = placementSurfaceY + GetMichiganSurvivalFallbackYOffset(item.name);
 
 				obj.SetPosition(position);
 				obj.Update();
 
-				if (debugStatics < 48)
+				if (ShouldLogMichiganSurvivalSettle(item.name, debugStatics))
 				{
-					PrintFormat("[MichiganSurvival] Static settle %1 surface %2 clipMinY %3 clearance %4 final %5", item.name, surfaceY, clipMinY, baseClearance, position.ToString(false));
+					PrintFormat("[MichiganSurvival] Static settle %1 centerSurface %2 placementSurface %3 clipMinY %4 clearance %5 final %6", item.name, surfaceY, placementSurfaceY, clipMinY, baseClearance, position.ToString(false));
 					debugStatics++;
 				}
 			}

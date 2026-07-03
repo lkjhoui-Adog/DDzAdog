@@ -16366,6 +16366,231 @@
       "enableCEPersistency": false
     },
     {
+      "name": "bldr_rds_asf1_25",
+      "pos": [
+        6397.11,
+        11.917,
+        3661.492
+      ],
+      "ypr": [
+        78,
+        0.0,
+        0.0
+      ],
+      "scale": 1.0,
+      "enableCEPersistency": false
+    },
+    {
+      "name": "bldr_rds_asf1_25",
+      "pos": [
+        6398.774,
+        11.917,
+        3653.667
+      ],
+      "ypr": [
+        78,
+        0.0,
+        0.0
+      ],
+      "scale": 1.0,
+      "enableCEPersistency": false
+    },
+    {
+      "name": "bldr_rds_asf1_25",
+      "pos": [
+        6400.437,
+        11.917,
+        3645.842
+      ],
+      "ypr": [
+        78,
+        0.0,
+        0.0
+      ],
+      "scale": 1.0,
+      "enableCEPersistency": false
+    },
+    {
+      "name": "bldr_rds_asf1_25",
+      "pos": [
+        6402.1,
+        11.917,
+        3638.017
+      ],
+      "ypr": [
+        78,
+        0.0,
+        0.0
+      ],
+      "scale": 1.0,
+      "enableCEPersistency": false
+    },
+    {
+      "name": "bldr_rds_asf1_25",
+      "pos": [
+        6403.764,
+        11.917,
+        3630.191
+      ],
+      "ypr": [
+        78,
+        0.0,
+        0.0
+      ],
+      "scale": 1.0,
+      "enableCEPersistency": false
+    },
+    {
+      "name": "bldr_rds_asf1_25",
+      "pos": [
+        6421.564,
+        11.917,
+        3666.69
+      ],
+      "ypr": [
+        78,
+        0.0,
+        0.0
+      ],
+      "scale": 1.0,
+      "enableCEPersistency": false
+    },
+    {
+      "name": "bldr_rds_asf1_25",
+      "pos": [
+        6423.227,
+        11.917,
+        3658.865
+      ],
+      "ypr": [
+        78,
+        0.0,
+        0.0
+      ],
+      "scale": 1.0,
+      "enableCEPersistency": false
+    },
+    {
+      "name": "bldr_rds_asf1_25",
+      "pos": [
+        6424.891,
+        11.917,
+        3651.04
+      ],
+      "ypr": [
+        78,
+        0.0,
+        0.0
+      ],
+      "scale": 1.0,
+      "enableCEPersistency": false
+    },
+    {
+      "name": "bldr_rds_asf1_25",
+      "pos": [
+        6426.554,
+        11.917,
+        3643.214
+      ],
+      "ypr": [
+        78,
+        0.0,
+        0.0
+      ],
+      "scale": 1.0,
+      "enableCEPersistency": false
+    },
+    {
+      "name": "bldr_rds_asf1_25",
+      "pos": [
+        6428.217,
+        11.917,
+        3635.389
+      ],
+      "ypr": [
+        78,
+        0.0,
+        0.0
+      ],
+      "scale": 1.0,
+      "enableCEPersistency": false
+    },
+    {
+      "name": "bldr_rds_asf1_25",
+      "pos": [
+        6446.018,
+        11.917,
+        3671.888
+      ],
+      "ypr": [
+        78,
+        0.0,
+        0.0
+      ],
+      "scale": 1.0,
+      "enableCEPersistency": false
+    },
+    {
+      "name": "bldr_rds_asf1_25",
+      "pos": [
+        6447.681,
+        11.917,
+        3664.063
+      ],
+      "ypr": [
+        78,
+        0.0,
+        0.0
+      ],
+      "scale": 1.0,
+      "enableCEPersistency": false
+    },
+    {
+      "name": "bldr_rds_asf1_25",
+      "pos": [
+        6449.344,
+        11.917,
+        3656.237
+      ],
+      "ypr": [
+        78,
+        0.0,
+        0.0
+      ],
+      "scale": 1.0,
+      "enableCEPersistency": false
+    },
+    {
+      "name": "bldr_rds_asf1_25",
+      "pos": [
+        6451.008,
+        11.917,
+        3648.412
+      ],
+      "ypr": [
+        78,
+        0.0,
+        0.0
+      ],
+      "scale": 1.0,
+      "enableCEPersistency": false
+    },
+    {
+      "name": "bldr_rds_asf1_25",
+      "pos": [
+        6452.671,
+        11.917,
+        3640.587
+      ],
+      "ypr": [
+        78,
+        0.0,
+        0.0
+      ],
+      "scale": 1.0,
+      "enableCEPersistency": false
+    },
+    {
       "name": "bldr_FuelStation_Shed",
       "pos": [
         6420,
