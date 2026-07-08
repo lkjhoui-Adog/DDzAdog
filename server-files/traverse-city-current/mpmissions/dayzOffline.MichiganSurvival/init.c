@@ -238,6 +238,39 @@ class CustomMission: MissionServer
 		return type.Contains("FuelStation") || type.Contains("Lamp_") || type.Contains("TrafficLights") || type.Contains("FireStation") || type.Contains("mobilelaboratory") || type.Contains("radio_building") || type.Contains("airport_small_main") || type.Contains("airport_small_hangar") || type.Contains("house_1w01") || type.Contains("house_1w02_blue") || type.Contains("house_2w01") || type.Contains("BusStation_wall") || type.Contains("BusStation_roof_long");
 	}
 
+	bool IsMichiganSurvivalObjectAt(float x, float z, float targetX, float targetZ)
+	{
+		return x > targetX - 0.5 && x < targetX + 0.5 && z > targetZ - 0.5 && z < targetZ + 0.5;
+	}
+
+	bool HasMichiganSurvivalFixedObjectY(string type, float x, float z)
+	{
+		if (type.Contains("house_2w01_yellow") && IsMichiganSurvivalObjectAt(x, z, 6514.0, 4176.0))
+			return true;
+
+		if (type.Contains("house_1w01_red") && IsMichiganSurvivalObjectAt(x, z, 6402.0, 4186.0))
+			return true;
+
+		if (type.Contains("airport_small_main") && IsMichiganSurvivalObjectAt(x, z, 6365.0, 4308.0))
+			return true;
+
+		return false;
+	}
+
+	float GetMichiganSurvivalFixedObjectY(string type, float x, float z, float computedY)
+	{
+		if (type.Contains("house_2w01_yellow") && IsMichiganSurvivalObjectAt(x, z, 6514.0, 4176.0))
+			return 190.25;
+
+		if (type.Contains("house_1w01_red") && IsMichiganSurvivalObjectAt(x, z, 6402.0, 4186.0))
+			return 190.4;
+
+		if (type.Contains("airport_small_main") && IsMichiganSurvivalObjectAt(x, z, 6365.0, 4308.0))
+			return 198.1;
+
+		return computedY;
+	}
+
 	bool ShouldSnapMichiganSurvivalBaseToSurface(string type)
 	{
 		return !IsMichiganSurvivalRoad(type) && !IsMichiganSurvivalWaterVisual(type);
@@ -306,6 +339,10 @@ class CustomMission: MissionServer
 				else
 					position[1] = placementSurfaceY + GetMichiganSurvivalFallbackYOffset(item.name);
 
+				bool fixedObjectY = HasMichiganSurvivalFixedObjectY(item.name, position[0], position[2]);
+				if (fixedObjectY)
+					position[1] = GetMichiganSurvivalFixedObjectY(item.name, position[0], position[2], position[1]);
+
 				obj.SetPosition(position);
 				obj.Update();
 
@@ -314,6 +351,9 @@ class CustomMission: MissionServer
 					PrintFormat("[MichiganSurvival] Static settle %1 centerSurface %2 placementSurface %3 clipMinY %4 clearance %5 final %6", item.name, surfaceY, placementSurfaceY, clipMinY, baseClearance, position.ToString(false));
 					debugStatics++;
 				}
+
+				if (fixedObjectY)
+					PrintFormat("[MichiganSurvival] Fixed Y override %1 final %2", item.name, position.ToString(false));
 			}
 
 			obj.SetAffectPathgraph(true, false);
