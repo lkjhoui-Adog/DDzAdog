@@ -140,7 +140,7 @@ class CustomMission: MissionServer
 			return -1.45;
 
 		if (IsMichiganSurvivalHouse(type))
-			return -2.05;
+			return -2.65;
 
 		if (type.Contains("Shed_Open"))
 			return -0.25;
