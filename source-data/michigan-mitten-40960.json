@@ -1,0 +1,126 @@
+{
+  "terrainName": "MichiganMitten",
+  "prototypeName": "Michigan Mitten 40.96km Detroit First Pass",
+  "outputPrefix": "michigan_mitten",
+  "sizeKm": 40.96,
+  "targetCrs": "EPSG:32617",
+  "osmFile": "osm-roads-water-landuse.json",
+  "center": {
+    "name": "Detroit, Michigan",
+    "latitude": 42.3314,
+    "longitude": -83.0458
+  },
+  "bboxWgs84": {
+    "south": 42.142396,
+    "west": -83.287528,
+    "north": 42.519917,
+    "east": -82.802623
+  },
+  "surfacePreferences": {
+    "forestBias": "high",
+    "farmlandBias": "moderate",
+    "urbanDetail": "major-hubs-only",
+    "notes": "Keep strong forest/rural space between cities; do not turn the whole map into farmland."
+  },
+  "names": [
+    {
+      "id": "Detroit",
+      "name": "Detroit",
+      "position": [20480, 20480],
+      "type": "NameCityCapital",
+      "radiusA": 1400,
+      "radiusB": 1200,
+      "angle": 0
+    },
+    {
+      "id": "DowntownDetroit",
+      "name": "Downtown Detroit",
+      "position": [21400, 19100],
+      "type": "NameCity",
+      "radiusA": 550,
+      "radiusB": 450,
+      "angle": 0
+    },
+    {
+      "id": "DetroitRiver",
+      "name": "Detroit River",
+      "position": [23500, 16000],
+      "type": "NameMarine",
+      "radiusA": 1400,
+      "radiusB": 500,
+      "angle": 20
+    },
+    {
+      "id": "BelleIsle",
+      "name": "Belle Isle",
+      "position": [25000, 20000],
+      "type": "NameLocal",
+      "radiusA": 500,
+      "radiusB": 300,
+      "angle": 0
+    },
+    {
+      "id": "Dearborn",
+      "name": "Dearborn",
+      "position": [15000, 18500],
+      "type": "NameCity",
+      "radiusA": 650,
+      "radiusB": 550,
+      "angle": 0
+    },
+    {
+      "id": "Southfield",
+      "name": "Southfield",
+      "position": [12800, 27800],
+      "type": "NameCity",
+      "radiusA": 650,
+      "radiusB": 550,
+      "angle": 0
+    },
+    {
+      "id": "RoyalOak",
+      "name": "Royal Oak",
+      "position": [17600, 29600],
+      "type": "NameCity",
+      "radiusA": 550,
+      "radiusB": 450,
+      "angle": 0
+    },
+    {
+      "id": "Warren",
+      "name": "Warren",
+      "position": [23000, 30500],
+      "type": "NameCity",
+      "radiusA": 700,
+      "radiusB": 550,
+      "angle": 0
+    },
+    {
+      "id": "SterlingHeights",
+      "name": "Sterling Heights",
+      "position": [27500, 33500],
+      "type": "NameCity",
+      "radiusA": 700,
+      "radiusB": 550,
+      "angle": 0
+    },
+    {
+      "id": "LakeStClair",
+      "name": "Lake St. Clair",
+      "position": [36500, 30500],
+      "type": "NameMarine",
+      "radiusA": 1600,
+      "radiusB": 1200,
+      "angle": 0
+    },
+    {
+      "id": "Downriver",
+      "name": "Downriver",
+      "position": [17000, 8700],
+      "type": "NameLocal",
+      "radiusA": 850,
+      "radiusB": 650,
+      "angle": 0
+    }
+  ]
+}

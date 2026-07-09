@@ -1,9 +1,13 @@
+param(
+    [string]$TerrainName = "MichiganSurvival"
+)
+
 $ErrorActionPreference = "Stop"
 
 $workspaceRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
 $workdriveRoot = Join-Path $workspaceRoot "workdrive"
-$sourceProject = Join-Path $workspaceRoot "terrain\terrain-builder\MichiganSurvival"
-$targetProject = Join-Path $workdriveRoot "MichiganSurvival"
+$sourceProject = Join-Path $workspaceRoot "terrain\terrain-builder\$TerrainName"
+$targetProject = Join-Path $workdriveRoot $TerrainName
 $terrainBuilderExe = "C:\Program Files (x86)\Steam\steamapps\common\DayZ Tools\Bin\TerrainBuilder\terrainBuilder.exe"
 
 if (-not (Test-Path -LiteralPath $terrainBuilderExe)) {

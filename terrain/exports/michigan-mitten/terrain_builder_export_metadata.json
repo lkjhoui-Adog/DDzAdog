@@ -1,0 +1,229 @@
+{
+  "terrainName": "MichiganMitten",
+  "prototypeName": "Michigan Mitten 40.96km Detroit First Pass",
+  "outputPrefix": "michigan_mitten",
+  "crs": "EPSG:32617",
+  "sizeMeters": 40960.0,
+  "centerWgs84": {
+    "name": "Detroit, Michigan",
+    "latitude": 42.3314,
+    "longitude": -83.0458
+  },
+  "centerProjected": {
+    "easting": 331450.26074962836,
+    "northing": 4688599.097956488
+  },
+  "centerUtm16n": {
+    "easting": 331450.26074962836,
+    "northing": 4688599.097956488
+  },
+  "boundsProjected": {
+    "west": 310970.26074962836,
+    "south": 4668119.097956488,
+    "east": 351930.26074962836,
+    "north": 4709079.097956488
+  },
+  "boundsUtm16n": {
+    "west": 310970.26074962836,
+    "south": 4668119.097956488,
+    "east": 351930.26074962836,
+    "north": 4709079.097956488
+  },
+  "heightmap": {
+    "floatTiff": "terrain/exports/michigan-mitten/heightmap/michigan_mitten_float.tif",
+    "heightPng16": "terrain/exports/michigan-mitten/heightmap/michigan_mitten_height_4096.png",
+    "previewPng": "terrain/exports/michigan-mitten/heightmap/michigan_mitten_height_preview.png",
+    "rasterSize": 4096,
+    "pixelSizeMeters": 10.0,
+    "elevationMeters": {
+      "min": 92.93148803710938,
+      "max": 232.06704711914062,
+      "range": 139.13555908203125
+    },
+    "transform": [
+      10.0,
+      0.0,
+      310970.26074962836,
+      0.0,
+      -10.0,
+      4709079.097956488
+    ]
+  },
+  "masks": {
+    "water": {
+      "path": "terrain/exports/michigan-mitten/masks/water_mask_4096.png",
+      "geoTiff": "terrain/exports/michigan-mitten/masks/water_mask_4096.tif",
+      "nonzeroPixels": 487509
+    },
+    "woods": {
+      "path": "terrain/exports/michigan-mitten/masks/woods_mask_4096.png",
+      "geoTiff": "terrain/exports/michigan-mitten/masks/woods_mask_4096.tif",
+      "nonzeroPixels": 8143590
+    },
+    "roads": {
+      "path": "terrain/exports/michigan-mitten/masks/roads_mask_4096.png",
+      "geoTiff": "terrain/exports/michigan-mitten/masks/roads_mask_4096.tif",
+      "nonzeroPixels": 949872
+    },
+    "farmland": {
+      "path": "terrain/exports/michigan-mitten/masks/farmland_mask_4096.png",
+      "geoTiff": "terrain/exports/michigan-mitten/masks/farmland_mask_4096.tif",
+      "nonzeroPixels": 0
+    },
+    "urban": {
+      "path": "terrain/exports/michigan-mitten/masks/urban_mask_4096.png",
+      "geoTiff": "terrain/exports/michigan-mitten/masks/urban_mask_4096.tif",
+      "nonzeroPixels": 0
+    }
+  },
+  "names": [
+    {
+      "id": "Detroit",
+      "name": "Detroit",
+      "position": [
+        20480,
+        20480
+      ],
+      "type": "NameCityCapital",
+      "radiusA": 1400,
+      "radiusB": 1200,
+      "angle": 0
+    },
+    {
+      "id": "DowntownDetroit",
+      "name": "Downtown Detroit",
+      "position": [
+        21400,
+        19100
+      ],
+      "type": "NameCity",
+      "radiusA": 550,
+      "radiusB": 450,
+      "angle": 0
+    },
+    {
+      "id": "DetroitRiver",
+      "name": "Detroit River",
+      "position": [
+        23500,
+        16000
+      ],
+      "type": "NameMarine",
+      "radiusA": 1400,
+      "radiusB": 500,
+      "angle": 20
+    },
+    {
+      "id": "BelleIsle",
+      "name": "Belle Isle",
+      "position": [
+        25000,
+        20000
+      ],
+      "type": "NameLocal",
+      "radiusA": 500,
+      "radiusB": 300,
+      "angle": 0
+    },
+    {
+      "id": "Dearborn",
+      "name": "Dearborn",
+      "position": [
+        15000,
+        18500
+      ],
+      "type": "NameCity",
+      "radiusA": 650,
+      "radiusB": 550,
+      "angle": 0
+    },
+    {
+      "id": "Southfield",
+      "name": "Southfield",
+      "position": [
+        12800,
+        27800
+      ],
+      "type": "NameCity",
+      "radiusA": 650,
+      "radiusB": 550,
+      "angle": 0
+    },
+    {
+      "id": "RoyalOak",
+      "name": "Royal Oak",
+      "position": [
+        17600,
+        29600
+      ],
+      "type": "NameCity",
+      "radiusA": 550,
+      "radiusB": 450,
+      "angle": 0
+    },
+    {
+      "id": "Warren",
+      "name": "Warren",
+      "position": [
+        23000,
+        30500
+      ],
+      "type": "NameCity",
+      "radiusA": 700,
+      "radiusB": 550,
+      "angle": 0
+    },
+    {
+      "id": "SterlingHeights",
+      "name": "Sterling Heights",
+      "position": [
+        27500,
+        33500
+      ],
+      "type": "NameCity",
+      "radiusA": 700,
+      "radiusB": 550,
+      "angle": 0
+    },
+    {
+      "id": "LakeStClair",
+      "name": "Lake St. Clair",
+      "position": [
+        36500,
+        30500
+      ],
+      "type": "NameMarine",
+      "radiusA": 1600,
+      "radiusB": 1200,
+      "angle": 0
+    },
+    {
+      "id": "Downriver",
+      "name": "Downriver",
+      "position": [
+        17000,
+        8700
+      ],
+      "type": "NameLocal",
+      "radiusA": 850,
+      "radiusB": 650,
+      "angle": 0
+    }
+  ],
+  "vectorLayerFeatureCounts": {
+    "roads": 20753,
+    "waterways": 67,
+    "water_polygons": 13,
+    "woods": 0,
+    "landuse": 0
+  },
+  "sourceFiles": {
+    "bounds": "source-data/michigan-mitten-40960.json",
+    "downloads": "source-data/downloads/michigan-mitten",
+    "dems": [
+      "source-data/raw/elevation/michigan-mitten/USGS_13_n43w083_20190401.tif",
+      "source-data/raw/elevation/michigan-mitten/USGS_13_n43w084_20190412.tif"
+    ],
+    "osm": "C:\\Users\\Adog\\Documents\\dayZ map of Michigan\\source-data\\downloads\\michigan-mitten\\osm-roads-water-landuse.json"
+  }
+}

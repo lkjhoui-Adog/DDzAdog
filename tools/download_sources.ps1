@@ -12,7 +12,8 @@ New-Item -ItemType Directory -Force -Path $OutputDir | Out-Null
 
 $tnmOutPath = Join-Path $OutputDir "usgs-tnm-dem-products.json"
 $overpassQueryPath = Join-Path $OutputDir "overpass-query.ql"
-$overpassOutPath = Join-Path $OutputDir "traverse-city-osm-roads-water.json"
+$osmFile = if ($bounds.osmFile) { $bounds.osmFile } else { "traverse-city-osm-roads-water.json" }
+$overpassOutPath = Join-Path $OutputDir $osmFile
 
 if (-not (Test-Path -LiteralPath $overpassQueryPath)) {
     & (Join-Path $PSScriptRoot "prepare_source_downloads.ps1") -BoundsFile $BoundsFile -OutputDir $OutputDir

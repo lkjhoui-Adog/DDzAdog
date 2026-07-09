@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "name": "prototype_bounds_utm16n",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:32617"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Michigan Mitten 40.96km Detroit First Pass Bounds"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              351930.26074962836,
+              4668119.097956488
+            ],
+            [
+              351930.26074962836,
+              4709079.097956488
+            ],
+            [
+              310970.26074962836,
+              4709079.097956488
+            ],
+            [
+              310970.26074962836,
+              4668119.097956488
+            ],
+            [
+              351930.26074962836,
+              4668119.097956488
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

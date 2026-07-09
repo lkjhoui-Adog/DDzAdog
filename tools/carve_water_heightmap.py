@@ -1,3 +1,4 @@
+import argparse
 import json
 from pathlib import Path
 
@@ -13,8 +14,15 @@ WORKDRIVE_SOURCE_DIR = ROOT / "workdrive" / "MichiganSurvival" / "source"
 SOURCE_ASC = SOURCE_DIR / "michigan_survival_height_4096.asc"
 
 
+def project_path(value):
+    path = Path(value)
+    if path.is_absolute():
+        return path
+    return ROOT / path
+
+
 def read_json(path):
-    return json.loads(path.read_text(encoding="utf-8"))
+    return json.loads(path.read_text(encoding="utf-8-sig"))
 
 
 def read_asc(path):
@@ -42,8 +50,29 @@ def write_asc(path, header_lines, arr):
             f.write("\n")
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(description="Normalize and carve water areas in a Terrain Builder ASC heightmap.")
+    parser.add_argument("--export-root", default=str(EXPORT_ROOT))
+    parser.add_argument("--package-root", default=None)
+    parser.add_argument("--workdrive-root", default=None)
+    return parser.parse_args()
+
+
+def configure_from_args(args, meta):
+    global EXPORT_ROOT, META_FILE, SOURCE_DIR, WORKDRIVE_SOURCE_DIR, SOURCE_ASC
+    EXPORT_ROOT = project_path(args.export_root)
+    META_FILE = EXPORT_ROOT / "terrain_builder_export_metadata.json"
+    package_root = project_path(args.package_root) if args.package_root else ROOT / "terrain" / "terrain-builder" / meta["terrainName"]
+    workdrive_root = project_path(args.workdrive_root) if args.workdrive_root else ROOT / "workdrive" / meta["terrainName"]
+    SOURCE_DIR = package_root / "source"
+    WORKDRIVE_SOURCE_DIR = workdrive_root / "source"
+    SOURCE_ASC = SOURCE_DIR / f"{meta['outputPrefix']}_height_{meta['heightmap']['rasterSize']}.asc"
+
+
 def main():
-    meta = read_json(META_FILE)
+    args = parse_args()
+    meta = read_json(project_path(args.export_root) / "terrain_builder_export_metadata.json")
+    configure_from_args(args, meta)
     water_mask_path = ROOT / meta["masks"]["water"]["path"]
 
     header, header_lines, heights = read_asc(SOURCE_ASC)
@@ -52,27 +81,25 @@ def main():
     valid &= heights != nodata
     water_mask = np.array(Image.open(water_mask_path).convert("L")) > 0
 
-    # Lake Michigan / Grand Traverse Bay sits at the low end of this DEM. Normalize
-    # the terrain so actual water is near DayZ sea level instead of 176m above it.
-    water_level = float(np.nanpercentile(heights[valid & water_mask], 35))
+    if np.any(valid & water_mask):
+        water_level = float(np.nanpercentile(heights[valid & water_mask], 35))
+    else:
+        water_level = float(np.nanpercentile(heights[valid], 5))
     normalized = heights - water_level
 
     below_water = np.full_like(normalized, -6.0)
     water_soft = np.array(
-        Image.fromarray((water_mask.astype(np.uint8) * 255), mode="L")
-        .filter(ImageFilter.GaussianBlur(radius=5))
+        Image.fromarray((water_mask.astype(np.uint8) * 255), mode="L").filter(ImageFilter.GaussianBlur(radius=5))
     ).astype(np.float32) / 255.0
     carved = normalized * (1.0 - water_soft) + below_water * water_soft
 
-    # Keep a shallow shoreline instead of hard 170m cliffs where the DEM waterline
-    # was noisy. Land remains above sea level; masked water is swimmable.
     shore = (water_soft > 0.02) & (water_soft < 0.92)
     carved[shore] = np.minimum(carved[shore], 1.25)
     carved[water_mask] = np.minimum(carved[water_mask], -2.0)
     carved[valid & ~water_mask] = np.maximum(carved[valid & ~water_mask], 0.35)
     carved[~valid] = np.nan
 
-    out_name = "michigan_survival_height_4096_water_carved.asc"
+    out_name = f"{meta['outputPrefix']}_height_{meta['heightmap']['rasterSize']}_water_carved.asc"
     for out_dir in (SOURCE_DIR, WORKDRIVE_SOURCE_DIR):
         write_asc(out_dir / out_name, header_lines, carved)
 
@@ -80,7 +107,7 @@ def main():
     preview[~np.isfinite(preview)] = np.nanmin(preview[np.isfinite(preview)])
     preview = np.clip((preview - np.nanmin(preview)) / (np.nanmax(preview) - np.nanmin(preview)) * 255, 0, 255).astype(np.uint8)
     for out_dir in (SOURCE_DIR, WORKDRIVE_SOURCE_DIR):
-        Image.fromarray(preview, mode="L").save(out_dir / "michigan_survival_height_4096_water_carved_preview.png")
+        Image.fromarray(preview, mode="L").save(out_dir / f"{meta['outputPrefix']}_height_{meta['heightmap']['rasterSize']}_water_carved_preview.png")
 
     report = {
         "sourceAsc": str(SOURCE_ASC),
@@ -90,7 +117,7 @@ def main():
         "carvedElevationMeters": {
             "min": float(np.nanmin(carved)),
             "max": float(np.nanmax(carved)),
-            "waterPixelMax": float(np.nanmax(carved[water_mask])),
+            "waterPixelMax": float(np.nanmax(carved[water_mask])) if np.any(water_mask) else None,
             "landPixelMin": float(np.nanmin(carved[valid & ~water_mask])),
         },
     }

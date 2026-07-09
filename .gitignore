@@ -1,9 +1,14 @@
 backups/
 workdrive/
 source-data/raw/
+source-data/downloads/
 build/inspect/
 build/server/mpmissions/**/storage_*/
 /build/
+.codex/
+.python-gis/
+__pycache__/
+tools/__pycache__/
 *.biprivatekey
 *.log
 *.rpt
@@ -32,3 +37,6 @@ terrain/qgis/inspect_qgz/
 /launcher-window*.png
 /dayz_launcher_*.png
 /desktop_test.png
+/mi_manager_*.png
+/navmesh_generator_*.png
+/terrainbuilder_*.png

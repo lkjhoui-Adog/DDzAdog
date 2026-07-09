@@ -12,7 +12,8 @@ New-Item -ItemType Directory -Force -Path $OutputDir | Out-Null
 
 $manifestPath = Join-Path $OutputDir "download-manifest.txt"
 $overpassQueryPath = Join-Path $OutputDir "overpass-query.ql"
-$overpassOutPath = Join-Path $OutputDir "traverse-city-osm-roads-water.json"
+$osmFile = if ($bounds.osmFile) { $bounds.osmFile } else { "traverse-city-osm-roads-water.json" }
+$overpassOutPath = Join-Path $OutputDir $osmFile
 $tnmOutPath = Join-Path $OutputDir "usgs-tnm-dem-products.json"
 
 $overpassQuery = @"
