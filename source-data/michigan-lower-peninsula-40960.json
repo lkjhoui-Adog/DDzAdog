@@ -1,0 +1,145 @@
+{
+  "terrainName": "MichiganMitten",
+  "prototypeName": "Michigan Lower Peninsula 40.96km",
+  "outputPrefix": "michigan_mitten",
+  "worldSizeMeters": 40960,
+  "rasterSize": 4096,
+  "terrainCellSizeMeters": 20,
+  "sourceCrs": "EPSG:4326",
+  "workingCrs": "EPSG:3078",
+  "sourceBoundsWgs84": {
+    "south": 41.69,
+    "west": -86.8,
+    "north": 45.84,
+    "east": -82.3
+  },
+  "worldPaddingMeters": {
+    "bottom": 800,
+    "top": 1200,
+    "minimumSide": 3500
+  },
+  "elevation": {
+    "greatLakesDatumMeters": 176.0,
+    "verticalScale": 0.22,
+    "landFloorMeters": 3.0,
+    "roadFloorMeters": 5.0,
+    "waterDepthMeters": -8.0
+  },
+  "surfacePreferences": {
+    "forestBias": "high",
+    "farmlandBias": "moderate",
+    "urbanDetail": "major-hubs-only",
+    "notes": "Preserve broad forest and rural travel space between condensed city hubs."
+  },
+  "surroundingWilderness": {
+    "enabled": true,
+    "landUse": "dense-forest",
+    "populateRoads": false,
+    "populateCities": false,
+    "futureWildlifeDensity": "high",
+    "elevation": {
+      "mode": "synthetic-rolling-highlands",
+      "seed": 26099,
+      "minimumInteriorMeters": 18.0,
+      "maximumInteriorMeters": 80.0,
+      "transitionToMittenMeters": 1800.0,
+      "coastlineRiseMeters": 1000.0
+    },
+    "notes": "Retain visible portions of Wisconsin, Indiana, Ohio, and Ontario as unnamed wilderness reserves."
+  },
+  "greatLakes": [
+    "Lake Michigan",
+    "Lake Huron",
+    "Lake Erie",
+    "Lake Saint Clair"
+  ],
+  "navigableWaterways": {
+    "minimumWidthGameMeters": 60.0,
+    "names": [
+      "Saint Clair River",
+      "Detroit River",
+      "North Channel",
+      "Middle Channel",
+      "South Channel",
+      "Saint Clair Cutoff"
+    ]
+  },
+  "hometown": {
+    "id": "Hometown",
+    "name": "Hometown",
+    "center": {
+      "latitude": 42.65,
+      "longitude": -82.93
+    },
+    "boundsWgs84": {
+      "south": 42.54,
+      "west": -83.06,
+      "north": 42.7,
+      "east": -82.82
+    },
+    "westBoundary": "Van Dyke Avenue",
+    "eastBoundary": "Gratiot Avenue",
+    "southBoundary": "Metropolitan Parkway",
+    "northBoundary": "23 Mile Road",
+    "majorSpawnArea": true,
+    "mapType": "NameCityCapital",
+    "roadNames": [
+      "Van Dyke Avenue",
+      "Gratiot Avenue",
+      "North Gratiot Avenue",
+      "South Gratiot Avenue",
+      "Metropolitan Parkway",
+      "Hall Road",
+      "17 Mile Road",
+      "18 Mile Road",
+      "19 Mile Road",
+      "19 1/2 Mile Road",
+      "21 Mile Road",
+      "22 Mile Road",
+      "23 Mile Road",
+      "Garfield Road",
+      "Hayes Road",
+      "Schoenherr Road",
+      "Romeo Plank Road",
+      "Groesbeck Highway",
+      "North Avenue"
+    ],
+    "spawnOffsetsMeters": [
+      [-360, -240],
+      [-180, 260],
+      [0, -320],
+      [190, 210],
+      [350, -120],
+      [420, 300]
+    ]
+  },
+  "places": [
+    {"id": "Detroit", "name": "Detroit", "latitude": 42.3314, "longitude": -83.0458, "type": "NameCityCapital"},
+    {"id": "AnnArbor", "name": "Ann Arbor", "latitude": 42.2808, "longitude": -83.743, "type": "NameCity"},
+    {"id": "Flint", "name": "Flint", "latitude": 43.0125, "longitude": -83.6875, "type": "NameCity"},
+    {"id": "Lansing", "name": "Lansing", "latitude": 42.7325, "longitude": -84.5555, "type": "NameCityCapital"},
+    {"id": "GrandRapids", "name": "Grand Rapids", "latitude": 42.9634, "longitude": -85.6681, "type": "NameCity"},
+    {"id": "Kalamazoo", "name": "Kalamazoo", "latitude": 42.2917, "longitude": -85.5872, "type": "NameCity"},
+    {"id": "BattleCreek", "name": "Battle Creek", "latitude": 42.3212, "longitude": -85.1797, "type": "NameCity"},
+    {"id": "Jackson", "name": "Jackson", "latitude": 42.2459, "longitude": -84.4013, "type": "NameCity"},
+    {"id": "Muskegon", "name": "Muskegon", "latitude": 43.2342, "longitude": -86.2484, "type": "NameCity"},
+    {"id": "Holland", "name": "Holland", "latitude": 42.7875, "longitude": -86.1089, "type": "NameCity"},
+    {"id": "BentonHarbor", "name": "Benton Harbor", "latitude": 42.1167, "longitude": -86.4542, "type": "NameCity"},
+    {"id": "PortHuron", "name": "Port Huron", "latitude": 42.9709, "longitude": -82.4249, "type": "NameCity"},
+    {"id": "Monroe", "name": "Monroe", "latitude": 41.9164, "longitude": -83.3977, "type": "NameCity"},
+    {"id": "Saginaw", "name": "Saginaw", "latitude": 43.4195, "longitude": -83.9508, "type": "NameCity"},
+    {"id": "BayCity", "name": "Bay City", "latitude": 43.5945, "longitude": -83.8889, "type": "NameCity"},
+    {"id": "Midland", "name": "Midland", "latitude": 43.6156, "longitude": -84.2472, "type": "NameCity"},
+    {"id": "MountPleasant", "name": "Mount Pleasant", "latitude": 43.5978, "longitude": -84.7675, "type": "NameCity"},
+    {"id": "BigRapids", "name": "Big Rapids", "latitude": 43.6981, "longitude": -85.4837, "type": "NameCity"},
+    {"id": "Cadillac", "name": "Cadillac", "latitude": 44.2519, "longitude": -85.4012, "type": "NameCity"},
+    {"id": "Ludington", "name": "Ludington", "latitude": 43.9553, "longitude": -86.4526, "type": "NameCity"},
+    {"id": "Manistee", "name": "Manistee", "latitude": 44.2444, "longitude": -86.3243, "type": "NameCity"},
+    {"id": "TraverseCity", "name": "Traverse City", "latitude": 44.7631, "longitude": -85.6206, "type": "NameCity"},
+    {"id": "Alpena", "name": "Alpena", "latitude": 45.0617, "longitude": -83.4328, "type": "NameCity"},
+    {"id": "Gaylord", "name": "Gaylord", "latitude": 45.0275, "longitude": -84.6748, "type": "NameCity"},
+    {"id": "Grayling", "name": "Grayling", "latitude": 44.6614, "longitude": -84.7148, "type": "NameCity"},
+    {"id": "Petoskey", "name": "Petoskey", "latitude": 45.3733, "longitude": -84.9553, "type": "NameCity"},
+    {"id": "MackinawCity", "name": "Mackinaw City", "latitude": 45.7775, "longitude": -84.7278, "type": "NameCity"}
+  ]
+}

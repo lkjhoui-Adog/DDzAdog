@@ -21,6 +21,8 @@ tools/__pycache__/
 *.xyz
 *.pbo
 *.wrp
+*.nm
+*.paa
 *.pew
 *.v4d
 *.v4w
@@ -28,6 +30,18 @@ tools/__pycache__/
 *.qgz~
 *.qgs~
 terrain/qgis/inspect_qgz/
+
+# Local checkpoints and generated DayZ runtime data.
+/archives/
+/_backup_config_*/
+server-files/**/mpmissions/**/storage_*/
+server-files/**/mpmissions/**/_backup*/
+server-files/**/mpmissions/**/_backup*
+server-files/**/mpmissions/**/areaflags.map
+terrain/terrain-builder/**/navmesh*/
+terrain/terrain-builder/**/data/layers/
+terrain/terrain-builder/**/_backup*
+terrain/terrain-builder/**/config.cpp.before-*
 
 # Root-level progress screenshots; generated evidence, not source.
 /*_after_*.png

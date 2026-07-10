@@ -28,8 +28,27 @@ class CfgSoundShaders
 class CfgWorlds
 {
     class DefaultWorld;
-    class CAWorld;
-
+    class CAWorld: DefaultWorld
+    {
+        class Weather
+        {
+            class Overcast
+            {
+                class Weather1;
+                class Weather2;
+                class Weather3;
+                class Weather4;
+                class Weather5;
+                class Weather6;
+                class Weather7;
+                class Weather8;
+                class Weather9;
+                class Weather10;
+                class Weather11;
+                class Weather12;
+            };
+        };
+    };
     class MichiganMitten: CAWorld
     {
         access = ReadOnlyVerified;
@@ -185,16 +204,49 @@ class CfgWorlds
         latitude = 42.331400;
         mapDisplayNameKey = "Michigan Mitten";
         mapDescriptionKey = "Michigan Mitten";
+        userMapPath = "";
+        class Grid
+        {
+            offsetX = 0;
+            offsetY = 0;
+            class Zoom1
+            {
+                zoomMax = 0.15;
+                format = "XY";
+                formatX = "000";
+                formatY = "000";
+                stepX = 100;
+                stepY = 100;
+            };
+            class Zoom2
+            {
+                zoomMax = 0.85;
+                format = "XY";
+                formatX = "00";
+                formatY = "00";
+                stepX = 1000;
+                stepY = 1000;
+            };
+            class Zoom3
+            {
+                zoomMax = 1e+30;
+                format = "XY";
+                formatX = "0";
+                formatY = "0";
+                stepX = 10000;
+                stepY = 10000;
+            };
+        };
         clutterGrid = 1.0;
         clutterDist = 125;
         noDetailDist = 65;
         fullDetailDist = 15;
-        midDetailTexture = "DZ\surfaces_bliss\data\terrain\cp_grass_ca.paa";
+        midDetailTexture = "DZ\surfaces\data\terrain\cp_grass_ca.paa";
         heightBlendingMode = 1;
         bicubicMode = 1;
 
 
-		class Weather
+		class Weather: Weather
 		{
 			class ThunderboltNorm
 			{
@@ -224,9 +276,9 @@ class CfgWorlds
 				distance = 350;
 			};
 
-			class Overcast
+			class Overcast: Overcast
 			{
-				class Weather1
+				class Weather1: Weather1
 				{
 					overcast=0.07;
 					lightingOvercast=0;
@@ -248,7 +300,7 @@ class CfgWorlds
 					cloudDiffuse=0;
 					waves=0;
 				};
-				class Weather2
+				class Weather2: Weather2
 				{
 					overcast=0.1;
 					lightingOvercast=0.15000001;
@@ -270,7 +322,7 @@ class CfgWorlds
 					cloudDiffuse=0;
 					waves=0;
 				};
-				class Weather3
+				class Weather3: Weather3
 				{
 					overcast=0.16;
 					lightingOvercast=0.15000001;
@@ -292,7 +344,7 @@ class CfgWorlds
 					cloudDiffuse=0;
 					waves=0;
 				};
-				class Weather4
+				class Weather4: Weather4
 				{
 					overcast=0.22;
 					lightingOvercast=0.15000001;
@@ -314,7 +366,7 @@ class CfgWorlds
 					cloudDiffuse=0;
 					waves=0;
 				};
-				class Weather5
+				class Weather5: Weather5
 				{
 					overcast=0.28;
 					lightingOvercast=0.15000001;
@@ -336,7 +388,7 @@ class CfgWorlds
 					cloudDiffuse=0;
 					waves=0;
 				};
-				class Weather6
+				class Weather6: Weather6
 				{
 					overcast=0.34;
 					lightingOvercast=0.15000001;
@@ -358,7 +410,7 @@ class CfgWorlds
 					cloudDiffuse=0;
 					waves=0;
 				};
-				class Weather7
+				class Weather7: Weather7
 				{
 					overcast=0.40000001;
 					lightingOvercast=0.15000001;
@@ -380,7 +432,7 @@ class CfgWorlds
 					cloudDiffuse=0;
 					waves=0;
 				};
-				class Weather8
+				class Weather8: Weather8
 				{
 					overcast=0.46000001;
 					lightingOvercast=0.15000001;
@@ -402,7 +454,7 @@ class CfgWorlds
 					cloudDiffuse=0;
 					waves=0;
 				};
-				class Weather9
+				class Weather9: Weather9
 				{
 					overcast=0.51999998;
 					lightingOvercast=0.30000001;
@@ -424,7 +476,7 @@ class CfgWorlds
 					cloudDiffuse=0;
 					waves=0;
 				};
-				class Weather10
+				class Weather10: Weather10
 				{
 					overcast=0.57999998;
 					lightingOvercast=0.57999998;
@@ -446,7 +498,7 @@ class CfgWorlds
 					cloudDiffuse=0;
 					waves=0;
 				};
-				class Weather11
+				class Weather11: Weather11
 				{
 					overcast=0.77999997;
 					lightingOvercast=1;
@@ -468,7 +520,7 @@ class CfgWorlds
 					cloudDiffuse=0;
 					waves=0;
 				};
-				class Weather12
+				class Weather12: Weather12
 				{
 					overcast=1.01;
 					lightingOvercast=1;

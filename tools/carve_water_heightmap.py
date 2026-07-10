@@ -55,6 +55,8 @@ def parse_args():
     parser.add_argument("--export-root", default=str(EXPORT_ROOT))
     parser.add_argument("--package-root", default=None)
     parser.add_argument("--workdrive-root", default=None)
+    parser.add_argument("--road-floor", type=float, default=5.0)
+    parser.add_argument("--road-buffer-pixels", type=int, default=2)
     return parser.parse_args()
 
 
@@ -74,12 +76,29 @@ def main():
     meta = read_json(project_path(args.export_root) / "terrain_builder_export_metadata.json")
     configure_from_args(args, meta)
     water_mask_path = ROOT / meta["masks"]["water"]["path"]
+    road_mask_path = ROOT / meta["masks"]["roads"]["path"]
+
+    if args.road_floor <= 0:
+        raise ValueError("--road-floor must be positive")
+    if args.road_buffer_pixels < 0:
+        raise ValueError("--road-buffer-pixels cannot be negative")
 
     header, header_lines, heights = read_asc(SOURCE_ASC)
     valid = np.isfinite(heights)
     nodata = float(header.get("nodata_value", "-9999"))
     valid &= heights != nodata
     water_mask = np.array(Image.open(water_mask_path).convert("L")) > 0
+    road_mask_image = Image.open(road_mask_path).convert("L")
+    road_mask = np.array(road_mask_image) > 0
+    if args.road_buffer_pixels:
+        filter_size = args.road_buffer_pixels * 2 + 1
+        road_corridor = np.array(road_mask_image.filter(ImageFilter.MaxFilter(size=filter_size))) > 0
+    else:
+        road_corridor = road_mask
+
+    # Road geometry is not useful when its terrain cells are at the waterline.
+    # Treat the buffered corridor as land, including short causeways across water.
+    effective_water_mask = water_mask & ~road_corridor
 
     if np.any(valid & water_mask):
         water_level = float(np.nanpercentile(heights[valid & water_mask], 35))
@@ -89,14 +108,26 @@ def main():
 
     below_water = np.full_like(normalized, -6.0)
     water_soft = np.array(
-        Image.fromarray((water_mask.astype(np.uint8) * 255), mode="L").filter(ImageFilter.GaussianBlur(radius=5))
+        Image.fromarray((effective_water_mask.astype(np.uint8) * 255), mode="L").filter(
+            ImageFilter.GaussianBlur(radius=5)
+        )
     ).astype(np.float32) / 255.0
     carved = normalized * (1.0 - water_soft) + below_water * water_soft
 
     shore = (water_soft > 0.02) & (water_soft < 0.92)
     carved[shore] = np.minimum(carved[shore], 1.25)
-    carved[water_mask] = np.minimum(carved[water_mask], -2.0)
-    carved[valid & ~water_mask] = np.maximum(carved[valid & ~water_mask], 0.35)
+    carved[effective_water_mask] = np.minimum(carved[effective_water_mask], -2.0)
+    land = valid & ~effective_water_mask
+    carved[land] = np.maximum(carved[land], 0.35)
+
+    road_soft = np.array(
+        Image.fromarray((road_corridor.astype(np.uint8) * 255), mode="L").filter(
+            ImageFilter.GaussianBlur(radius=max(1, args.road_buffer_pixels + 1))
+        )
+    ).astype(np.float32) / 255.0
+    road_shoulder_floor = 0.35 + road_soft * (args.road_floor - 0.35)
+    carved[land] = np.maximum(carved[land], road_shoulder_floor[land])
+    carved[valid & road_corridor] = np.maximum(carved[valid & road_corridor], args.road_floor)
     carved[~valid] = np.nan
 
     out_name = f"{meta['outputPrefix']}_height_{meta['heightmap']['rasterSize']}_water_carved.asc"
@@ -112,13 +143,21 @@ def main():
     report = {
         "sourceAsc": str(SOURCE_ASC),
         "sourceWaterMask": str(water_mask_path),
+        "sourceRoadMask": str(road_mask_path),
         "waterLevelSubtractedMeters": water_level,
+        "roadFloorMeters": args.road_floor,
+        "roadBufferPixels": args.road_buffer_pixels,
+        "roadCorridorPixels": int(np.count_nonzero(road_corridor)),
+        "waterPixelsProtectedByRoads": int(np.count_nonzero(water_mask & road_corridor)),
         "outputAsc": out_name,
         "carvedElevationMeters": {
             "min": float(np.nanmin(carved)),
             "max": float(np.nanmax(carved)),
-            "waterPixelMax": float(np.nanmax(carved[water_mask])) if np.any(water_mask) else None,
-            "landPixelMin": float(np.nanmin(carved[valid & ~water_mask])),
+            "waterPixelMax": (
+                float(np.nanmax(carved[effective_water_mask])) if np.any(effective_water_mask) else None
+            ),
+            "landPixelMin": float(np.nanmin(carved[land])),
+            "roadPixelMin": float(np.nanmin(carved[valid & road_mask])),
         },
     }
     for out_dir in (SOURCE_DIR, WORKDRIVE_SOURCE_DIR):

@@ -1,122 +1,241 @@
+import argparse
 from pathlib import Path
-import re
+import shutil
 
 from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[1]
 MITTEN = ROOT / "workdrive" / "MichiganMitten"
-SURVIVAL_LAYERS = ROOT / "workdrive" / "MichiganSurvival" / "data" / "layers"
 MITTEN_LAYERS = MITTEN / "data" / "layers"
 MASK = MITTEN / "source" / "michigan_mitten_mask_lco.png"
+SATELLITE = MITTEN / "source" / "michigan_mitten_sat_lco.png"
 
+SATELLITE_SIZE = 4096
 TILE_SIZE = 512
-TILE_COUNT = 9
-TILE_STEP = 448
-TEX_SCALE = 0.00080001028
-POS_START_X = 0.03125
-POS_START_Y = 8.03125
-POS_STEP = 0.9375
+TILE_COUNT = SATELLITE_SIZE // TILE_SIZE
+WORLD_SIZE_METERS = 40960.0
+TILE_WORLD_SIZE_METERS = WORLD_SIZE_METERS / TILE_COUNT
+FULL_SURFACE_SUFFIX = "L00"
 
 
 def fmt(value: float) -> str:
-    text = f"{value:.7f}"
+    if abs(value) < 0.0000000000005:
+        return "0"
+    text = f"{value:.12f}"
     return text.rstrip("0").rstrip(".")
 
 
-def generate_mask_tiles() -> int:
+def terrainx_rvmat(
+    satellite_name: str,
+    mask_name: str,
+    scale: float,
+    position_x: float,
+    position_y: float,
+) -> str:
+    replacements = {
+        "__SATELLITE__": satellite_name,
+        "__MASK__": mask_name,
+        "__SCALE__": fmt(scale),
+        "__POS_X__": fmt(position_x),
+        "__POS_Y__": fmt(position_y),
+    }
+    text = """ambient[]={0.9,0.9,0.9,1};
+diffuse[]={0.9,0.9,0.9,1};
+forcedDiffuse[]={0.02,0.02,0.02,1};
+emmisive[]={0,0,0,0};
+specular[]={0,0,0,0};
+specularPower=0;
+class Stage0
+{
+\ttexture="michiganmitten\\data\\layers\\__SATELLITE__";
+\ttexGen=3;
+};
+class Stage1
+{
+\ttexture="michiganmitten\\data\\layers\\__MASK__";
+\ttexGen=4;
+};
+class TexGen3
+{
+\tuvSource="worldPos";
+\tclass uvTransform
+\t{
+\t\taside[]={__SCALE__,0,0};
+\t\tup[]={0,0,__SCALE__};
+\t\tdir[]={0,-__SCALE__,0};
+\t\tpos[]={__POS_X__,__POS_Y__,0};
+\t};
+};
+class TexGen4
+{
+\tuvSource="worldPos";
+\tclass uvTransform
+\t{
+\t\taside[]={__SCALE__,0,0};
+\t\tup[]={0,0,__SCALE__};
+\t\tdir[]={0,-__SCALE__,0};
+\t\tpos[]={__POS_X__,__POS_Y__,0};
+\t};
+};
+class TexGen0
+{
+\tuvSource="tex";
+\tclass uvTransform
+\t{
+\t\taside[]={1,0,0};
+\t\tup[]={0,1,0};
+\t\tdir[]={0,0,1};
+\t\tpos[]={0,0,0};
+\t};
+};
+class TexGen1
+{
+\tuvSource="tex";
+\tclass uvTransform
+\t{
+\t\taside[]={10,0,0};
+\t\tup[]={0,10,0};
+\t\tdir[]={0,0,10};
+\t\tpos[]={0,0,0};
+\t};
+};
+class TexGen2
+{
+\tuvSource="tex";
+\tclass uvTransform
+\t{
+\t\taside[]={10,0,0};
+\t\tup[]={0,10,0};
+\t\tdir[]={0,0,10};
+\t\tpos[]={0,0,0};
+\t};
+};
+PixelShaderID="TerrainX";
+VertexShaderID="Terrain";
+class Stage2
+{
+\ttexture="#(rgb,1,1,1)color(0.5,0.5,0.5,1,cdt)";
+\ttexGen=0;
+};
+class Stage3
+{
+\ttexture="dz\\surfaces\\data\\terrain\\cp_grass_nopx.paa";
+\ttexGen=1;
+};
+class Stage4
+{
+\ttexture="dz\\surfaces\\data\\terrain\\cp_grass_ca.paa";
+\ttexGen=2;
+};
+class Stage5 { texture=""; texGen=1; };
+class Stage6 { texture=""; texGen=2; };
+class Stage7 { texture=""; texGen=1; };
+class Stage8 { texture=""; texGen=2; };
+class Stage9 { texture=""; texGen=1; };
+class Stage10 { texture=""; texGen=2; };
+class Stage11 { texture=""; texGen=1; };
+class Stage12 { texture=""; texGen=2; };
+class Stage13 { texture=""; texGen=1; };
+class Stage14 { texture=""; texGen=2; };
+"""
+    for key, value in replacements.items():
+        text = text.replace(key, value)
+    return text
+
+
+def prepare_images() -> tuple[Path, Path, Path, Path]:
     MITTEN_LAYERS.mkdir(parents=True, exist_ok=True)
-    image = Image.open(MASK).convert("RGB")
+    expected_size = (SATELLITE_SIZE, SATELLITE_SIZE)
+    with Image.open(SATELLITE) as satellite:
+        if satellite.size != expected_size:
+            raise ValueError(f"Satellite image must be {expected_size}, got {satellite.size}")
+    with Image.open(MASK) as mask:
+        if mask.size != expected_size:
+            raise ValueError(f"Surface mask must be {expected_size}, got {mask.size}")
+
+    satellite_target = MITTEN_LAYERS / "S_full_lco.png"
+    source_mask_target = MITTEN_LAYERS / "M_full_source_lco.png"
+    full_mask_target = MITTEN_LAYERS / "M_full_lca.png"
+    tile_mask_target = MITTEN_LAYERS / "M_base_lca.png"
+    shutil.copy2(SATELLITE, satellite_target)
+    shutil.copy2(MASK, source_mask_target)
+
+    # Opaque black selects the first TerrainX detail layer.
+    Image.new("RGBA", expected_size, (0, 0, 0, 255)).save(full_mask_target)
+    Image.new("RGBA", (TILE_SIZE, TILE_SIZE), (0, 0, 0, 255)).save(tile_mask_target)
+    return satellite_target, source_mask_target, full_mask_target, tile_mask_target
+
+
+def generate_satellite_tiles() -> int:
     created = 0
-    for row in range(TILE_COUNT):
-        for col in range(TILE_COUNT):
-            left = col * TILE_STEP
-            upper = row * TILE_STEP
-            crop = image.crop((left, upper, left + TILE_SIZE, upper + TILE_SIZE))
-            crop.save(MITTEN_LAYERS / f"M_{row:03d}_{col:03d}_lco.png")
-            created += 1
-    return created
-
-
-def collect_templates() -> dict[str, str]:
-    templates: dict[str, str] = {}
-    for path in sorted(SURVIVAL_LAYERS.glob("P_*.rvmat")):
-        match = re.match(r"^P_\d{3}-\d{3}_(.+)\.rvmat$", path.name)
-        if not match:
-            continue
-        suffix = match.group(1)
-        templates.setdefault(suffix, path.read_text(encoding="ascii"))
-    if not templates:
-        raise RuntimeError(f"No RVMAT templates found in {SURVIVAL_LAYERS}")
-    return templates
-
-
-def replace_first_two_pos_blocks(text: str, row: int, col: int) -> str:
-    x_pos = POS_START_X - (row * POS_STEP)
-    y_pos = POS_START_Y - (col * POS_STEP)
-    replacement = f"pos[]={{{fmt(x_pos)},{fmt(y_pos)},0}};"
-
-    def repl(match: re.Match[str]) -> str:
-        repl.count += 1
-        return replacement if repl.count <= 2 else match.group(0)
-
-    repl.count = 0
-    return re.sub(r"pos\[\]=\{[^}]+\};", repl, text)
-
-
-def rewrite_template(template: str, row: int, col: int) -> str:
-    text = template.replace("michigansurvival", "michiganmitten")
-    text = re.sub(
-        r's_\d{3}_\d{3}_lco\.paa',
-        f"s_{row:03d}_{col:03d}_lco.paa",
-        text,
-        flags=re.IGNORECASE,
-    )
-    text = re.sub(
-        r'm_\d{3}_\d{3}_lco\.paa',
-        f"m_{row:03d}_{col:03d}_lco.paa",
-        text,
-        flags=re.IGNORECASE,
-    )
-    text = re.sub(
-        r"aside\[\]=\{0\.00080001028,0,0\};",
-        f"aside[]={{{TEX_SCALE},0,0}};",
-        text,
-    )
-    text = re.sub(
-        r"up\[\]=\{0,0,0\.00080001028\};",
-        f"up[]={{0,0,{TEX_SCALE}}};",
-        text,
-    )
-    text = re.sub(
-        r"dir\[\]=\{0,-0\.00080001028,0\};",
-        f"dir[]={{0,-{TEX_SCALE},0}};",
-        text,
-    )
-    return replace_first_two_pos_blocks(text, row, col)
-
-
-def generate_rvmats() -> int:
-    templates = collect_templates()
-    for stale in MITTEN_LAYERS.glob("P_*.rvmat"):
-        stale.unlink()
-
-    created = 0
-    for row in range(TILE_COUNT):
-        for col in range(TILE_COUNT):
-            for suffix, template in templates.items():
-                rvmat = rewrite_template(template, row, col)
-                out = MITTEN_LAYERS / f"P_{row:03d}-{col:03d}_{suffix}.rvmat"
-                out.write_text(rvmat, encoding="ascii", newline="\n")
+    with Image.open(SATELLITE) as source:
+        image = source.convert("RGB")
+        for tile_x in range(TILE_COUNT):
+            for tile_y in range(TILE_COUNT):
+                left = tile_x * TILE_SIZE
+                upper = tile_y * TILE_SIZE
+                crop = image.crop((left, upper, left + TILE_SIZE, upper + TILE_SIZE))
+                crop.save(MITTEN_LAYERS / f"S_{tile_x:03d}_{tile_y:03d}_lco.png")
                 created += 1
     return created
 
 
+def generate_tiled_surface_rvmats() -> int:
+    for stale in MITTEN_LAYERS.glob("P_*.rvmat"):
+        stale.unlink()
+
+    scale = 1.0 / TILE_WORLD_SIZE_METERS
+    created = 0
+    for tile_x in range(TILE_COUNT):
+        for tile_y in range(TILE_COUNT):
+            text = terrainx_rvmat(
+                f"s_{tile_x:03d}_{tile_y:03d}_lco.paa",
+                "m_base_lca.paa",
+                scale,
+                -float(tile_x),
+                float(TILE_COUNT - tile_y),
+            )
+            output = MITTEN_LAYERS / f"P_{tile_x:03d}-{tile_y:03d}_{FULL_SURFACE_SUFFIX}.rvmat"
+            output.write_text(text, encoding="ascii", newline="\n")
+            created += 1
+    return created
+
+
+def generate_full_surface_rvmat() -> Path:
+    text = terrainx_rvmat(
+        "s_full_lco.paa",
+        "m_full_lca.paa",
+        1.0 / WORLD_SIZE_METERS,
+        0.0,
+        1.0,
+    )
+    output = MITTEN_LAYERS / f"P_full_{FULL_SURFACE_SUFFIX}.rvmat"
+    output.write_text(text, encoding="ascii", newline="\n")
+    return output
+
+
 def main() -> None:
-    mask_tiles = generate_mask_tiles()
-    rvmats = generate_rvmats()
-    print(f"Generated {mask_tiles} mask PNG tiles")
-    print(f"Generated {rvmats} layer RVMAT files")
+    global MITTEN, MITTEN_LAYERS, MASK, SATELLITE
+    parser = argparse.ArgumentParser(description="Generate tiled TerrainX layers for MichiganMitten.")
+    parser.add_argument("--project-root", default=str(MITTEN))
+    args = parser.parse_args()
+    MITTEN = Path(args.project_root).resolve()
+    MITTEN_LAYERS = MITTEN / "data" / "layers"
+    MASK = MITTEN / "source" / "michigan_mitten_mask_lco.png"
+    SATELLITE = MITTEN / "source" / "michigan_mitten_sat_lco.png"
+
+    satellite, source_mask, full_mask, tile_mask = prepare_images()
+    satellite_tiles = generate_satellite_tiles()
+    rvmats = generate_tiled_surface_rvmats()
+    full_surface = generate_full_surface_rvmat()
+    print(f"Prepared full satellite image: {satellite}")
+    print(f"Preserved source classification mask: {source_mask}")
+    print(f"Prepared full fallback mask: {full_mask}")
+    print(f"Prepared tile mask: {tile_mask}")
+    print(f"Generated {satellite_tiles} satellite PNG tiles")
+    print(f"Generated {rvmats} tiled TerrainX RVMAT files")
+    print(f"Generated full-world fallback RVMAT: {full_surface}")
 
 
 if __name__ == "__main__":

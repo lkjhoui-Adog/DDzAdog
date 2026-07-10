@@ -1,12 +1,18 @@
 {
   "sourceAsc": "C:\\Users\\Adog\\Documents\\dayZ map of Michigan\\terrain\\terrain-builder\\MichiganMitten\\source\\michigan_mitten_height_4096.asc",
   "sourceWaterMask": "C:\\Users\\Adog\\Documents\\dayZ map of Michigan\\terrain\\exports\\michigan-mitten\\masks\\water_mask_4096.png",
+  "sourceRoadMask": "C:\\Users\\Adog\\Documents\\dayZ map of Michigan\\terrain\\exports\\michigan-mitten\\masks\\roads_mask_4096.png",
   "waterLevelSubtractedMeters": 174.86099243164062,
+  "roadFloorMeters": 5.0,
+  "roadBufferPixels": 2,
+  "roadCorridorPixels": 4636102,
+  "waterPixelsProtectedByRoads": 1931,
   "outputAsc": "michigan_mitten_height_4096_water_carved.asc",
   "carvedElevationMeters": {
     "min": -6.0,
     "max": 57.20600891113281,
     "waterPixelMax": -2.0,
-    "landPixelMin": 0.3499999940395355
+    "landPixelMin": 0.3499999940395355,
+    "roadPixelMin": 5.0
   }
 }

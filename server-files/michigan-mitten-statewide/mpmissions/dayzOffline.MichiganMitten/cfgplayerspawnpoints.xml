@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<playerspawnpoints>
+    <fresh>
+        <spawn_params>
+            <min_dist_infected>0</min_dist_infected>
+            <max_dist_infected>100</max_dist_infected>
+            <min_dist_player>0</min_dist_player>
+            <max_dist_player>250</max_dist_player>
+            <min_dist_static>0</min_dist_static>
+            <max_dist_static>100</max_dist_static>
+        </spawn_params>
+        <generator_params>
+            <grid_density>4</grid_density>
+            <grid_width>80</grid_width>
+            <grid_height>80</grid_height>
+            <min_dist_static>0</min_dist_static>
+            <max_dist_static>100</max_dist_static>
+            <min_steepness>-25</min_steepness>
+            <max_steepness>25</max_steepness>
+        </generator_params>
+        <group_params>
+            <enablegroups>false</enablegroups>
+            <groups_as_regular>true</groups_as_regular>
+            <lifetime>-1</lifetime>
+            <counter>-1</counter>
+        </group_params>
+        <generator_posbubbles>
+            <group name="Hometown">
+                <pos x="32001.296" z="9973.177" />
+                <pos x="32181.296" z="10473.177" />
+                <pos x="32361.296" z="9893.177" />
+                <pos x="32551.296" z="10423.177" />
+                <pos x="32711.296" z="10093.177" />
+                <pos x="32781.296" z="10513.177" />
+            </group>
+        </generator_posbubbles>
+    </fresh>
+    <hop>
+        <spawn_params>
+            <min_dist_infected>0</min_dist_infected>
+            <max_dist_infected>100</max_dist_infected>
+            <min_dist_player>0</min_dist_player>
+            <max_dist_player>250</max_dist_player>
+            <min_dist_static>0</min_dist_static>
+            <max_dist_static>100</max_dist_static>
+        </spawn_params>
+        <generator_params>
+            <grid_density>4</grid_density>
+            <grid_width>80</grid_width>
+            <grid_height>80</grid_height>
+            <min_dist_static>0</min_dist_static>
+            <max_dist_static>100</max_dist_static>
+            <min_steepness>-25</min_steepness>
+            <max_steepness>25</max_steepness>
+        </generator_params>
+        <group_params>
+            <enablegroups>false</enablegroups>
+            <groups_as_regular>true</groups_as_regular>
+            <lifetime>-1</lifetime>
+            <counter>-1</counter>
+        </group_params>
+        <generator_posbubbles>
+            <group name="Hometown">
+                <pos x="32001.296" z="9973.177" />
+                <pos x="32181.296" z="10473.177" />
+                <pos x="32361.296" z="9893.177" />
+                <pos x="32551.296" z="10423.177" />
+                <pos x="32711.296" z="10093.177" />
+                <pos x="32781.296" z="10513.177" />
+            </group>
+        </generator_posbubbles>
+    </hop>
+    <travel>
+        <spawn_params>
+            <min_dist_infected>0</min_dist_infected>
+            <max_dist_infected>100</max_dist_infected>
+            <min_dist_player>0</min_dist_player>
+            <max_dist_player>250</max_dist_player>
+            <min_dist_static>0</min_dist_static>
+            <max_dist_static>100</max_dist_static>
+        </spawn_params>
+        <generator_params>
+            <grid_density>4</grid_density>
+            <grid_width>80</grid_width>
+            <grid_height>80</grid_height>
+            <min_dist_static>0</min_dist_static>
+            <max_dist_static>100</max_dist_static>
+            <min_steepness>-25</min_steepness>
+            <max_steepness>25</max_steepness>
+        </generator_params>
+        <group_params>
+            <enablegroups>false</enablegroups>
+            <groups_as_regular>true</groups_as_regular>
+            <lifetime>-1</lifetime>
+            <counter>-1</counter>
+        </group_params>
+        <generator_posbubbles>
+            <group name="Hometown">
+                <pos x="32001.296" z="9973.177" />
+                <pos x="32181.296" z="10473.177" />
+                <pos x="32361.296" z="9893.177" />
+                <pos x="32551.296" z="10423.177" />
+                <pos x="32711.296" z="10093.177" />
+                <pos x="32781.296" z="10513.177" />
+            </group>
+        </generator_posbubbles>
+    </travel>
+</playerspawnpoints>

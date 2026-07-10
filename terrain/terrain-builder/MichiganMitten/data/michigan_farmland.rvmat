@@ -23,7 +23,7 @@ class Stage1
 
 class Stage2
 {
-    texture = "dz\surfaces_bliss\data\terrain\cp_grass_ca.paa";
+    texture = "dz\surfaces\data\terrain\cp_grass_ca.paa";
     uvSource = "tex";
     class uvTransform
     {
