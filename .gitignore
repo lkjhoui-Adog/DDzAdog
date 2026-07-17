@@ -55,3 +55,4 @@ terrain/terrain-builder/**/config.cpp.before-*
 /mi_manager_*.png
 /navmesh_generator_*.png
 /terrainbuilder_*.png
+.python-video/
