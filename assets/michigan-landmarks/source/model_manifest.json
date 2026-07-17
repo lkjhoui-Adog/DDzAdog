@@ -1,0 +1,998 @@
+{
+  "addon": "MichiganMitten_Landmarks",
+  "models": [
+    {
+      "className": "MI_Landmark_Detroit_RenaissanceCenter",
+      "model": "mi_detroit_renaissance_center.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "Detroit",
+      "displayName": "Detroit Renaissance Center",
+      "anchorRole": "primary",
+      "archetype": "renaissance-center-public-core",
+      "footprintMeters": [
+        160.0,
+        120.0
+      ],
+      "maximumHeightMeters": 137.0,
+      "reservedParcelMeters": [
+        220.0,
+        180.0
+      ],
+      "center": [
+        31380.214,
+        7028.735
+      ],
+      "yawDegrees": 135.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 12853814,
+      "renderPoints": 6336,
+      "renderFaces": 5221,
+      "distancePoints": 48,
+      "distanceFaces": 36,
+      "roadwayPoints": 920,
+      "roadwayFaces": 216,
+      "geometryPoints": 6332,
+      "geometryFaces": 5220,
+      "geometryComponents": 750
+    },
+    {
+      "className": "MI_Landmark_Alpena_MaritimeExchange",
+      "model": "mi_alpena_maritime_exchange.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "Alpena",
+      "displayName": "Alpena Maritime Exchange",
+      "anchorRole": "primary",
+      "archetype": "lighthouse-market",
+      "footprintMeters": [
+        58.0,
+        42.0
+      ],
+      "maximumHeightMeters": 34.0,
+      "reservedParcelMeters": [
+        115.0,
+        95.0
+      ],
+      "center": [
+        28141.567,
+        33141.861
+      ],
+      "yawDegrees": 0.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 1063002,
+      "renderPoints": 1338,
+      "renderFaces": 1057,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 160,
+      "roadwayFaces": 40,
+      "geometryPoints": 1150,
+      "geometryFaces": 918,
+      "geometryComponents": 136
+    },
+    {
+      "className": "MI_Landmark_AnnArbor_CampusClockHall",
+      "model": "mi_ann_arbor_campus_clock_hall.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "AnnArbor",
+      "displayName": "Ann Arbor Campus Clock Hall",
+      "anchorRole": "primary",
+      "archetype": "clock-quad",
+      "footprintMeters": [
+        82.0,
+        58.0
+      ],
+      "maximumHeightMeters": 49.0,
+      "reservedParcelMeters": [
+        150.0,
+        130.0
+      ],
+      "center": [
+        26072.989,
+        6694.057
+      ],
+      "yawDegrees": 0.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 1570115,
+      "renderPoints": 1892,
+      "renderFaces": 1417,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 236,
+      "roadwayFaces": 59,
+      "geometryPoints": 1568,
+      "geometryFaces": 1176,
+      "geometryComponents": 196
+    },
+    {
+      "className": "MI_Landmark_BattleCreek_CerealWorks",
+      "model": "mi_battle_creek_cereal_works.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "BattleCreek",
+      "displayName": "Battle Creek Cereal Works",
+      "anchorRole": "primary",
+      "archetype": "factory-silos",
+      "footprintMeters": [
+        94.0,
+        62.0
+      ],
+      "maximumHeightMeters": 46.0,
+      "reservedParcelMeters": [
+        180.0,
+        135.0
+      ],
+      "center": [
+        17044.36,
+        6839.229
+      ],
+      "yawDegrees": 45.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 1696029,
+      "renderPoints": 1998,
+      "renderFaces": 1555,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 236,
+      "roadwayFaces": 59,
+      "geometryPoints": 1642,
+      "geometryFaces": 1290,
+      "geometryComponents": 197
+    },
+    {
+      "className": "MI_Landmark_BayCity_HistoricCivicHall",
+      "model": "mi_bay_city_historic_civic_hall.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "BayCity",
+      "displayName": "Bay City Historic Civic Hall",
+      "anchorRole": "primary",
+      "archetype": "clock-civic",
+      "footprintMeters": [
+        72.0,
+        52.0
+      ],
+      "maximumHeightMeters": 39.0,
+      "reservedParcelMeters": [
+        145.0,
+        115.0
+      ],
+      "center": [
+        25799.311,
+        19365.012
+      ],
+      "yawDegrees": 0.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 970826,
+      "renderPoints": 1316,
+      "renderFaces": 985,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 160,
+      "roadwayFaces": 40,
+      "geometryPoints": 1080,
+      "geometryFaces": 810,
+      "geometryComponents": 135
+    },
+    {
+      "className": "MI_Landmark_BentonHarbor_ArtsMarket",
+      "model": "mi_benton_harbor_arts_market.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "BentonHarbor",
+      "displayName": "Benton Harbor Arts Market",
+      "anchorRole": "primary",
+      "archetype": "brick-market",
+      "footprintMeters": [
+        60.0,
+        44.0
+      ],
+      "maximumHeightMeters": 25.0,
+      "reservedParcelMeters": [
+        115.0,
+        95.0
+      ],
+      "center": [
+        7458.854,
+        4743.933
+      ],
+      "yawDegrees": 0.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 965573,
+      "renderPoints": 1292,
+      "renderFaces": 967,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 160,
+      "roadwayFaces": 40,
+      "geometryPoints": 1080,
+      "geometryFaces": 810,
+      "geometryComponents": 135
+    },
+    {
+      "className": "MI_Landmark_BigRapids_RiverMillHall",
+      "model": "mi_big_rapids_river_mill_hall.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "BigRapids",
+      "displayName": "Big Rapids River Mill Hall",
+      "anchorRole": "primary",
+      "archetype": "mill-collegiate",
+      "footprintMeters": [
+        60.0,
+        44.0
+      ],
+      "maximumHeightMeters": 29.0,
+      "reservedParcelMeters": [
+        115.0,
+        95.0
+      ],
+      "center": [
+        14487.827,
+        19849.639
+      ],
+      "yawDegrees": 0.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 1007212,
+      "renderPoints": 1322,
+      "renderFaces": 1009,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 160,
+      "roadwayFaces": 40,
+      "geometryPoints": 1110,
+      "geometryFaces": 852,
+      "geometryComponents": 136
+    },
+    {
+      "className": "MI_Landmark_Cadillac_LakeDepot",
+      "model": "mi_cadillac_lake_depot.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "Cadillac",
+      "displayName": "Cadillac Lake Depot",
+      "anchorRole": "primary",
+      "archetype": "rail-depot",
+      "footprintMeters": [
+        62.0,
+        42.0
+      ],
+      "maximumHeightMeters": 24.0,
+      "reservedParcelMeters": [
+        115.0,
+        95.0
+      ],
+      "center": [
+        14868.657,
+        24974.482
+      ],
+      "yawDegrees": 0.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 505115,
+      "renderPoints": 788,
+      "renderFaces": 589,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 84,
+      "roadwayFaces": 21,
+      "geometryPoints": 624,
+      "geometryFaces": 468,
+      "geometryComponents": 78
+    },
+    {
+      "className": "MI_Landmark_Flint_VehicleCityWorks",
+      "model": "mi_flint_vehicle_city_works.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "Flint",
+      "displayName": "Flint Vehicle City Works",
+      "anchorRole": "primary",
+      "archetype": "factory-water-tower",
+      "footprintMeters": [
+        104.0,
+        72.0
+      ],
+      "maximumHeightMeters": 55.0,
+      "reservedParcelMeters": [
+        190.0,
+        150.0
+      ],
+      "center": [
+        26296.614,
+        13740.12
+      ],
+      "yawDegrees": 45.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 1690758,
+      "renderPoints": 2028,
+      "renderFaces": 1555,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 236,
+      "roadwayFaces": 59,
+      "geometryPoints": 1640,
+      "geometryFaces": 1266,
+      "geometryComponents": 200
+    },
+    {
+      "className": "MI_Landmark_Gaylord_AlpineHall",
+      "model": "mi_gaylord_alpine_hall.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "Gaylord",
+      "displayName": "Gaylord Alpine Hall",
+      "anchorRole": "primary",
+      "archetype": "alpine-hall",
+      "footprintMeters": [
+        58.0,
+        42.0
+      ],
+      "maximumHeightMeters": 28.0,
+      "reservedParcelMeters": [
+        115.0,
+        95.0
+      ],
+      "center": [
+        19742.917,
+        32415.495
+      ],
+      "yawDegrees": 0.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 978093,
+      "renderPoints": 1284,
+      "renderFaces": 961,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 160,
+      "roadwayFaces": 40,
+      "geometryPoints": 1096,
+      "geometryFaces": 822,
+      "geometryComponents": 137
+    },
+    {
+      "className": "MI_Landmark_GrandRapids_RiverfrontMarketTower",
+      "model": "mi_grand_rapids_riverfront_market_tower.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "GrandRapids",
+      "displayName": "Grand Rapids Riverfront Market Tower",
+      "anchorRole": "primary",
+      "archetype": "market-tower",
+      "footprintMeters": [
+        106.0,
+        74.0
+      ],
+      "maximumHeightMeters": 69.0,
+      "reservedParcelMeters": [
+        200.0,
+        150.0
+      ],
+      "center": [
+        12918.906,
+        12775.611
+      ],
+      "yawDegrees": 45.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 2284848,
+      "renderPoints": 2524,
+      "renderFaces": 1891,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 312,
+      "roadwayFaces": 78,
+      "geometryPoints": 2056,
+      "geometryFaces": 1542,
+      "geometryComponents": 257
+    },
+    {
+      "className": "MI_Landmark_Grayling_ForestryDepot",
+      "model": "mi_grayling_forestry_depot.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "Grayling",
+      "displayName": "Grayling Forestry Depot",
+      "anchorRole": "primary",
+      "archetype": "forestry-depot",
+      "footprintMeters": [
+        56.0,
+        40.0
+      ],
+      "maximumHeightMeters": 22.0,
+      "reservedParcelMeters": [
+        115.0,
+        95.0
+      ],
+      "center": [
+        19477.977,
+        28951.29
+      ],
+      "yawDegrees": 0.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 501947,
+      "renderPoints": 772,
+      "renderFaces": 577,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 84,
+      "roadwayFaces": 21,
+      "geometryPoints": 624,
+      "geometryFaces": 468,
+      "geometryComponents": 78
+    },
+    {
+      "className": "MI_Landmark_Holland_WindmillMarket",
+      "model": "mi_holland_windmill_market.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "Holland",
+      "displayName": "Holland Windmill Market",
+      "anchorRole": "primary",
+      "archetype": "windmill-market",
+      "footprintMeters": [
+        60.0,
+        42.0
+      ],
+      "maximumHeightMeters": 37.0,
+      "reservedParcelMeters": [
+        115.0,
+        95.0
+      ],
+      "center": [
+        10011.173,
+        11196.434
+      ],
+      "yawDegrees": 0.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 473281,
+      "renderPoints": 764,
+      "renderFaces": 571,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 84,
+      "roadwayFaces": 21,
+      "geometryPoints": 584,
+      "geometryFaces": 438,
+      "geometryComponents": 73
+    },
+    {
+      "className": "MI_Landmark_Hometown_PartridgeCreek",
+      "model": "mi_hometown_partridge_creek.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "Hometown",
+      "displayName": "The Mall at Partridge Creek",
+      "anchorRole": "primary",
+      "archetype": "open-air-mall-promenade",
+      "footprintMeters": [
+        184.0,
+        112.0
+      ],
+      "maximumHeightMeters": 28.0,
+      "reservedParcelMeters": [
+        240.0,
+        170.0
+      ],
+      "center": [
+        32361.296,
+        10038.177
+      ],
+      "yawDegrees": 0.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 566432,
+      "renderPoints": 808,
+      "renderFaces": 649,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 58,
+      "roadwayFaces": 11,
+      "geometryPoints": 676,
+      "geometryFaces": 552,
+      "geometryComponents": 78
+    },
+    {
+      "className": "MI_Landmark_Hometown_FreedomHill",
+      "model": "mi_hometown_freedom_hill.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "Hometown",
+      "displayName": "Freedom Hill Amphitheatre",
+      "anchorRole": "secondary",
+      "archetype": "covered-amphitheatre",
+      "footprintMeters": [
+        168.0,
+        124.0
+      ],
+      "maximumHeightMeters": 32.0,
+      "reservedParcelMeters": [
+        220.0,
+        180.0
+      ],
+      "center": [
+        31880.0,
+        9850.0
+      ],
+      "yawDegrees": 20.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 1217223,
+      "renderPoints": 1084,
+      "renderFaces": 1261,
+      "distancePoints": 16,
+      "distanceFaces": 12,
+      "roadwayPoints": 404,
+      "roadwayFaces": 101,
+      "geometryPoints": 1080,
+      "geometryFaces": 1260,
+      "geometryComponents": 110
+    },
+    {
+      "className": "MI_Landmark_Jackson_UnionRailTerminal",
+      "model": "mi_jackson_union_rail_terminal.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "Jackson",
+      "displayName": "Jackson Union Rail Terminal",
+      "anchorRole": "primary",
+      "archetype": "rail-clock-terminal",
+      "footprintMeters": [
+        86.0,
+        58.0
+      ],
+      "maximumHeightMeters": 40.0,
+      "reservedParcelMeters": [
+        165.0,
+        125.0
+      ],
+      "center": [
+        21979.228,
+        5629.062
+      ],
+      "yawDegrees": 45.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 1009327,
+      "renderPoints": 1372,
+      "renderFaces": 1027,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 160,
+      "roadwayFaces": 40,
+      "geometryPoints": 1112,
+      "geometryFaces": 834,
+      "geometryComponents": 139
+    },
+    {
+      "className": "MI_Landmark_Kalamazoo_HeritageTheater",
+      "model": "mi_kalamazoo_heritage_theater.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "Kalamazoo",
+      "displayName": "Kalamazoo Heritage Theater Block",
+      "anchorRole": "primary",
+      "archetype": "theater-block",
+      "footprintMeters": [
+        74.0,
+        54.0
+      ],
+      "maximumHeightMeters": 34.0,
+      "reservedParcelMeters": [
+        145.0,
+        115.0
+      ],
+      "center": [
+        13668.243,
+        6461.12
+      ],
+      "yawDegrees": 0.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 970080,
+      "renderPoints": 1316,
+      "renderFaces": 985,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 160,
+      "roadwayFaces": 40,
+      "geometryPoints": 1080,
+      "geometryFaces": 810,
+      "geometryComponents": 135
+    },
+    {
+      "className": "MI_Landmark_Lansing_StateCapitol",
+      "model": "mi_lansing_state_capitol.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "Lansing",
+      "displayName": "Michigan State Capitol",
+      "anchorRole": "primary",
+      "archetype": "capitol-dome",
+      "footprintMeters": [
+        102.0,
+        72.0
+      ],
+      "maximumHeightMeters": 66.0,
+      "reservedParcelMeters": [
+        190.0,
+        170.0
+      ],
+      "center": [
+        21108.078,
+        10763.485
+      ],
+      "yawDegrees": 90.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 1712469,
+      "renderPoints": 2038,
+      "renderFaces": 1585,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 236,
+      "roadwayFaces": 59,
+      "geometryPoints": 1650,
+      "geometryFaces": 1296,
+      "geometryComponents": 198
+    },
+    {
+      "className": "MI_Landmark_Ludington_CarferryTerminal",
+      "model": "mi_ludington_carferry_terminal.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "Ludington",
+      "displayName": "Ludington Carferry Terminal",
+      "anchorRole": "primary",
+      "archetype": "ferry-lighthouse",
+      "footprintMeters": [
+        62.0,
+        44.0
+      ],
+      "maximumHeightMeters": 35.0,
+      "reservedParcelMeters": [
+        115.0,
+        95.0
+      ],
+      "center": [
+        7760.084,
+        22069.342
+      ],
+      "yawDegrees": 0.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 567403,
+      "renderPoints": 826,
+      "renderFaces": 673,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 84,
+      "roadwayFaces": 21,
+      "geometryPoints": 662,
+      "geometryFaces": 552,
+      "geometryComponents": 75
+    },
+    {
+      "className": "MI_Landmark_MackinawCity_StraitsFort",
+      "model": "mi_mackinaw_city_straits_fort.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "MackinawCity",
+      "displayName": "Mackinaw Straits Fort and Ferry Hall",
+      "anchorRole": "primary",
+      "archetype": "fort-ferry",
+      "footprintMeters": [
+        58.0,
+        42.0
+      ],
+      "maximumHeightMeters": 26.0,
+      "reservedParcelMeters": [
+        115.0,
+        95.0
+      ],
+      "center": [
+        19197.545,
+        39649.966
+      ],
+      "yawDegrees": 0.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 575982,
+      "renderPoints": 820,
+      "renderFaces": 673,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 84,
+      "roadwayFaces": 21,
+      "geometryPoints": 672,
+      "geometryFaces": 564,
+      "geometryComponents": 76
+    },
+    {
+      "className": "MI_Landmark_Manistee_VictorianRiverHall",
+      "model": "mi_manistee_victorian_river_hall.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "Manistee",
+      "displayName": "Manistee Victorian River Hall",
+      "anchorRole": "primary",
+      "archetype": "victorian-river-hall",
+      "footprintMeters": [
+        58.0,
+        42.0
+      ],
+      "maximumHeightMeters": 30.0,
+      "reservedParcelMeters": [
+        115.0,
+        95.0
+      ],
+      "center": [
+        8627.976,
+        24817.138
+      ],
+      "yawDegrees": 0.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 961083,
+      "renderPoints": 1268,
+      "renderFaces": 949,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 160,
+      "roadwayFaces": 40,
+      "geometryPoints": 1080,
+      "geometryFaces": 810,
+      "geometryComponents": 135
+    },
+    {
+      "className": "MI_Landmark_Midland_ModernistResearchCampus",
+      "model": "mi_midland_modernist_research_campus.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "Midland",
+      "displayName": "Midland Modernist Research Campus",
+      "anchorRole": "primary",
+      "archetype": "modernist-campus",
+      "footprintMeters": [
+        98.0,
+        66.0
+      ],
+      "maximumHeightMeters": 44.0,
+      "reservedParcelMeters": [
+        180.0,
+        145.0
+      ],
+      "center": [
+        23042.14,
+        19582.765
+      ],
+      "yawDegrees": 0.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 1577137,
+      "renderPoints": 1924,
+      "renderFaces": 1441,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 236,
+      "roadwayFaces": 59,
+      "geometryPoints": 1568,
+      "geometryFaces": 1176,
+      "geometryComponents": 196
+    },
+    {
+      "className": "MI_Landmark_Monroe_RiverRaisinArsenal",
+      "model": "mi_monroe_river_raisin_arsenal.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "Monroe",
+      "displayName": "Monroe River Raisin Arsenal Hall",
+      "anchorRole": "primary",
+      "archetype": "arsenal-courthouse",
+      "footprintMeters": [
+        60.0,
+        44.0
+      ],
+      "maximumHeightMeters": 30.0,
+      "reservedParcelMeters": [
+        115.0,
+        95.0
+      ],
+      "center": [
+        29294.643,
+        3199.341
+      ],
+      "yawDegrees": 0.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 982871,
+      "renderPoints": 1308,
+      "renderFaces": 979,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 160,
+      "roadwayFaces": 40,
+      "geometryPoints": 1096,
+      "geometryFaces": 822,
+      "geometryComponents": 137
+    },
+    {
+      "className": "MI_Landmark_MountPleasant_CentralHall",
+      "model": "mi_mount_pleasant_central_hall.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "MountPleasant",
+      "displayName": "Mount Pleasant Central Hall",
+      "anchorRole": "primary",
+      "archetype": "central-hall-water-tower",
+      "footprintMeters": [
+        62.0,
+        44.0
+      ],
+      "maximumHeightMeters": 36.0,
+      "reservedParcelMeters": [
+        115.0,
+        95.0
+      ],
+      "center": [
+        19372.459,
+        18948.096
+      ],
+      "yawDegrees": 0.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 1061699,
+      "renderPoints": 1364,
+      "renderFaces": 1057,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 160,
+      "roadwayFaces": 40,
+      "geometryPoints": 1152,
+      "geometryFaces": 900,
+      "geometryComponents": 139
+    },
+    {
+      "className": "MI_Landmark_Muskegon_LakePortFoundry",
+      "model": "mi_muskegon_lake_port_foundry.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "Muskegon",
+      "displayName": "Muskegon Lake Port Foundry",
+      "anchorRole": "primary",
+      "archetype": "port-foundry",
+      "footprintMeters": [
+        98.0,
+        68.0
+      ],
+      "maximumHeightMeters": 50.0,
+      "reservedParcelMeters": [
+        185.0,
+        145.0
+      ],
+      "center": [
+        8744.695,
+        14924.848
+      ],
+      "yawDegrees": 135.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 1622982,
+      "renderPoints": 1954,
+      "renderFaces": 1483,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 236,
+      "roadwayFaces": 59,
+      "geometryPoints": 1598,
+      "geometryFaces": 1218,
+      "geometryComponents": 197
+    },
+    {
+      "className": "MI_Landmark_Petoskey_StoneResortHotel",
+      "model": "mi_petoskey_stone_resort_hotel.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "Petoskey",
+      "displayName": "Petoskey Stone Resort Hotel",
+      "anchorRole": "primary",
+      "archetype": "stone-hotel-turret",
+      "footprintMeters": [
+        62.0,
+        44.0
+      ],
+      "maximumHeightMeters": 38.0,
+      "reservedParcelMeters": [
+        115.0,
+        95.0
+      ],
+      "center": [
+        17681.854,
+        35704.785
+      ],
+      "yawDegrees": 90.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 1687747,
+      "renderPoints": 1908,
+      "renderFaces": 1489,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 236,
+      "roadwayFaces": 59,
+      "geometryPoints": 1648,
+      "geometryFaces": 1296,
+      "geometryComponents": 198
+    },
+    {
+      "className": "MI_Landmark_PortHuron_CustomsFreightTerminal",
+      "model": "mi_port_huron_customs_freight_terminal.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "PortHuron",
+      "displayName": "Port Huron Customs and Freight Terminal",
+      "anchorRole": "primary",
+      "archetype": "customs-terminal",
+      "footprintMeters": [
+        64.0,
+        46.0
+      ],
+      "maximumHeightMeters": 32.0,
+      "reservedParcelMeters": [
+        115.0,
+        95.0
+      ],
+      "center": [
+        35677.066,
+        13630.772
+      ],
+      "yawDegrees": 135.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 1000347,
+      "renderPoints": 1324,
+      "renderFaces": 991,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 160,
+      "roadwayFaces": 40,
+      "geometryPoints": 1112,
+      "geometryFaces": 834,
+      "geometryComponents": 139
+    },
+    {
+      "className": "MI_Landmark_Saginaw_CastleCivicHall",
+      "model": "mi_saginaw_castle_civic_hall.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "Saginaw",
+      "displayName": "Saginaw Castle Civic Hall",
+      "anchorRole": "primary",
+      "archetype": "castle-civic",
+      "footprintMeters": [
+        76.0,
+        54.0
+      ],
+      "maximumHeightMeters": 45.0,
+      "reservedParcelMeters": [
+        145.0,
+        120.0
+      ],
+      "center": [
+        25087.542,
+        17439.113
+      ],
+      "yawDegrees": 0.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 1693741,
+      "renderPoints": 1940,
+      "renderFaces": 1513,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 236,
+      "roadwayFaces": 59,
+      "geometryPoints": 1648,
+      "geometryFaces": 1296,
+      "geometryComponents": 198
+    },
+    {
+      "className": "MI_Landmark_TraverseCity_StateTheaterMarket",
+      "model": "mi_traverse_city_state_theater_market.p3d",
+      "kind": "playable-signature-city-landmark",
+      "cityId": "TraverseCity",
+      "displayName": "Traverse City State Theater and Market",
+      "anchorRole": "primary",
+      "archetype": "theater-market",
+      "footprintMeters": [
+        84.0,
+        58.0
+      ],
+      "maximumHeightMeters": 36.0,
+      "reservedParcelMeters": [
+        160.0,
+        125.0
+      ],
+      "center": [
+        13519.883,
+        29881.428
+      ],
+      "yawDegrees": 0.0,
+      "interiorStatus": "enterable with walkable floors, exterior stairs, open portals, and collision-separated shell",
+      "bytes": 974582,
+      "renderPoints": 1340,
+      "renderFaces": 1003,
+      "distancePoints": 24,
+      "distanceFaces": 18,
+      "roadwayPoints": 160,
+      "roadwayFaces": 40,
+      "geometryPoints": 1080,
+      "geometryFaces": 810,
+      "geometryComponents": 135
+    }
+  ],
+  "locationCount": 28,
+  "modelCount": 29,
+  "playableNewModelCount": 29,
+  "textureOutputs": [],
+  "config": "C:\\Users\\Adog\\Documents\\dayZ map of Michigan\\workdrive\\MichiganMitten_Landmarks\\config.cpp",
+  "preview": "C:\\Users\\Adog\\Documents\\dayZ map of Michigan\\build\\diagnostics\\michigan-playable-landmarks-contact-sheet.png",
+  "conditionPolicy": "Fifteen years without routine maintenance or organized cleanup. Buildings are enterable and show selective looting, weathering, faded signs, broken or boarded glazing, stripped public areas, debris, weeds, and localized damage without uniform destruction."
+}
