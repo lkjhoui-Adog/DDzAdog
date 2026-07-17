@@ -7,6 +7,8 @@
 - Physical roads are native WRP objects; the old mission-time road loader is disabled.
 - Active server mission contains 43 intentional files and no persistence or test-backup artifacts.
 - Previous mission and persistence are archived at `archives/pre-gameplay-ce-install-20260717-150749`.
+- The initial generic-loot CE pass is additionally archived at `archives/pre-gameplay-ce-install-20260717-153010`.
+- The category-specific pre-wildlife-tuning pass is archived at `archives/pre-gameplay-ce-install-20260717-153618`.
 
 ## Central Economy population
 
@@ -15,10 +17,12 @@
 - 34,167 placement-expanded loot sockets across the world.
 - 388 infected territory zones.
 - 116 wildlife territories, including deer, boar, fox, hare, wolves, and bears.
+- Conservative active wildlife nominals: 8 deer groups, 8 roe-deer groups, 6 boar groups, 4 wolf packs, 3 bear groups, 8 foxes, and 12 hares.
 - 134 road-aligned land-vehicle spawn candidates.
 - 24 water-verified boat spawn candidates.
 - 28 land-verified helicopter crash candidates.
 - Six fresh-player spawn bubbles centered on Hometown.
+- Dedicated usage tags now distinguish police, prison, military, medical/scientific, industrial, school, historical, hunting, coastal, farm, town, and residential loot areas.
 
 ## Conservative first-test limits
 

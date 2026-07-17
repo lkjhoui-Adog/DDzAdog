@@ -50,6 +50,42 @@ VEHICLE_EVENTS = {
     "VehicleSedan02",
     "VehicleTruck01",
 }
+VALID_USAGES = {
+    "Coast",
+    "Farm",
+    "Firefighter",
+    "Historical",
+    "Hunting",
+    "Industrial",
+    "Medic",
+    "Military",
+    "Office",
+    "Police",
+    "Prison",
+    "School",
+    "Town",
+    "Village",
+}
+EXPECTED_GROUP_USAGES = {
+    "MI_Building_StatePoliceStation": {"Police"},
+    "MI_Building_StateHospital": {"Medic"},
+    "MI_Building_StateMilitaryBarracks": {"Military"},
+    "MI_Building_StateCampOffice": {"Hunting"},
+    "MI_Building_StatePrisonBlock": {"Prison"},
+    "MI_Building_StateSchool": {"School"},
+    "MI_Building_NorthMarinaBait": {"Coast"},
+    "MI_Building_ResearchBiologyLab": {"Medic", "Industrial"},
+}
+EXPECTED_ANIMAL_NOMINALS = {
+    "AmbientFox": 8,
+    "AmbientHare": 12,
+    "AmbientHen": 0,
+    "AnimalBear": 3,
+    "AnimalDeer": 8,
+    "AnimalRoeDeer": 8,
+    "AnimalWildBoar": 6,
+    "AnimalWolf": 4,
+}
 
 
 def write_json(path: Path, payload: dict) -> None:
@@ -102,6 +138,7 @@ def main() -> int:
 
     events_root = parsed.get("db/events.xml")
     event_names: list[str] = []
+    event_nominals: dict[str, int] = {}
     if events_root is not None:
         event_names = [str(item.attrib.get("name", "")) for item in events_root.findall("event")]
         if len(event_names) != len(set(event_names)):
@@ -112,6 +149,17 @@ def main() -> int:
             missing = sorted(required - {child.tag for child in event})
             if missing:
                 errors.append(f"Event {name} is missing nodes: {missing}")
+            nominal = event.find("nominal")
+            if nominal is not None:
+                try:
+                    event_nominals[name] = int(nominal.text or "")
+                except ValueError:
+                    errors.append(f"Event {name} has invalid nominal value {nominal.text!r}")
+        for name, expected in EXPECTED_ANIMAL_NOMINALS.items():
+            if event_nominals.get(name) != expected:
+                errors.append(
+                    f"Animal event {name} nominal is {event_nominals.get(name)}, expected {expected}"
+                )
 
     spawn_counts: dict[str, int] = {}
     spawn_root = parsed.get("cfgeventspawns.xml")
@@ -153,6 +201,7 @@ def main() -> int:
     group_names: set[str] = set()
     loot_points = 0
     loot_points_by_group: dict[str, int] = {}
+    usages_by_group: dict[str, list[str]] = {}
     if prototype is not None:
         definitions = prototype.findall("group")
         names = [str(item.attrib.get("name", "")) for item in definitions]
@@ -160,6 +209,12 @@ def main() -> int:
         if len(names) != len(group_names):
             errors.append("Duplicate map group definitions")
         for group in definitions:
+            group_name = str(group.attrib.get("name", ""))
+            group_usages = [str(item.attrib.get("name", "")) for item in group.findall("usage")]
+            usages_by_group[group_name] = group_usages
+            unknown_usages = sorted(set(group_usages) - VALID_USAGES)
+            if unknown_usages:
+                errors.append(f"Map group {group_name} has unknown usages: {unknown_usages}")
             points = group.findall("./container/point")
             if not points:
                 errors.append(f"Map group {group.attrib.get('name')} has no loot points")
@@ -169,7 +224,13 @@ def main() -> int:
                 except ValueError as exc:
                     errors.append(f"Invalid loot point in {group.attrib.get('name')}: {exc}")
             loot_points += len(points)
-            loot_points_by_group[str(group.attrib.get("name", ""))] = len(points)
+            loot_points_by_group[group_name] = len(points)
+        for group_name, expected_usages in EXPECTED_GROUP_USAGES.items():
+            actual = set(usages_by_group.get(group_name, []))
+            if not expected_usages.issubset(actual):
+                errors.append(
+                    f"Map group {group_name} usages {sorted(actual)} do not include {sorted(expected_usages)}"
+                )
 
     group_placements = 0
     group_types: dict[str, int] = {}
@@ -206,6 +267,10 @@ def main() -> int:
     expanded_loot_points = sum(
         count * loot_points_by_group.get(name, 0) for name, count in group_types.items()
     )
+    expanded_usage_counts: dict[str, int] = {}
+    for group_name, count in group_types.items():
+        for usage in usages_by_group.get(group_name, []):
+            expanded_usage_counts[usage] = expanded_usage_counts.get(usage, 0) + count
 
     territory_counts: dict[str, int] = {}
     zombie_root = parsed.get("env/zombie_territories.xml")
@@ -264,10 +329,12 @@ def main() -> int:
         "wrp": str(args.wrp.resolve()),
         "xmlFiles": len(parsed),
         "eventDefinitions": len(event_names),
+        "eventNominals": event_nominals,
         "eventSpawns": spawn_counts,
         "mapGroupDefinitions": len(group_names),
         "mapGroupPlacements": group_placements,
         "mapGroupTypeCounts": group_types,
+        "placementExpandedUsageCounts": expanded_usage_counts,
         "prototypeLootPoints": loot_points,
         "placementExpandedLootPoints": expanded_loot_points,
         "territories": territory_counts,

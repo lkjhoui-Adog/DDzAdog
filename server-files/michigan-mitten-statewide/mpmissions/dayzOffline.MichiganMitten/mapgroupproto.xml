@@ -454,11 +454,13 @@
         </container>
     </group>
     <group name="MI_Building_NorthMarinaBait" lootmax="3">
-        <usage name="Town" />
+        <usage name="Coast" />
+        <usage name="Hunting" />
         <container name="lootFloor" lootmax="3">
-            <category name="clothes" />
+            <category name="weapons" />
             <category name="food" />
             <category name="tools" />
+            <category name="clothes" />
             <category name="containers" />
             <tag name="ground" />
             <tag name="floor" />
@@ -635,10 +637,11 @@
         </container>
     </group>
     <group name="MI_Building_ResearchBiologyLab" lootmax="4">
-        <usage name="Town" />
+        <usage name="Medic" />
+        <usage name="Industrial" />
+        <usage name="Office" />
         <container name="lootFloor" lootmax="4">
             <category name="clothes" />
-            <category name="food" />
             <category name="tools" />
             <category name="containers" />
             <tag name="ground" />
@@ -655,10 +658,11 @@
         </container>
     </group>
     <group name="MI_Building_ResearchCanadaConservationLab" lootmax="4">
-        <usage name="Town" />
+        <usage name="Medic" />
+        <usage name="Industrial" />
+        <usage name="Office" />
         <container name="lootFloor" lootmax="4">
             <category name="clothes" />
-            <category name="food" />
             <category name="tools" />
             <category name="containers" />
             <tag name="ground" />
@@ -675,10 +679,11 @@
         </container>
     </group>
     <group name="MI_Building_ResearchDormitory" lootmax="4">
-        <usage name="Town" />
+        <usage name="Medic" />
+        <usage name="Industrial" />
+        <usage name="Office" />
         <container name="lootFloor" lootmax="4">
             <category name="clothes" />
-            <category name="food" />
             <category name="tools" />
             <category name="containers" />
             <tag name="ground" />
@@ -695,10 +700,11 @@
         </container>
     </group>
     <group name="MI_Building_ResearchMichiganForestLab" lootmax="4">
-        <usage name="Town" />
+        <usage name="Medic" />
+        <usage name="Industrial" />
+        <usage name="Office" />
         <container name="lootFloor" lootmax="4">
             <category name="clothes" />
-            <category name="food" />
             <category name="tools" />
             <category name="containers" />
             <tag name="ground" />
@@ -716,6 +722,8 @@
     </group>
     <group name="MI_Building_ResearchQuarantineWard" lootmax="3">
         <usage name="Medic" />
+        <usage name="Industrial" />
+        <usage name="Office" />
         <container name="lootFloor" lootmax="3">
             <category name="clothes" />
             <category name="tools" />
@@ -730,11 +738,13 @@
         </container>
     </group>
     <group name="MI_Building_ResearchUtilityBuilding" lootmax="3">
+        <usage name="Medic" />
         <usage name="Industrial" />
+        <usage name="Office" />
         <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
             <category name="tools" />
             <category name="containers" />
-            <category name="clothes" />
             <tag name="ground" />
             <tag name="floor" />
             <point pos="-8.840 0.180 -6.240" range="0.850" height="1.700" flags="32" />
@@ -745,10 +755,11 @@
         </container>
     </group>
     <group name="MI_Building_ResearchWisconsinFieldStation" lootmax="4">
-        <usage name="Town" />
+        <usage name="Medic" />
+        <usage name="Industrial" />
+        <usage name="Office" />
         <container name="lootFloor" lootmax="4">
             <category name="clothes" />
-            <category name="food" />
             <category name="tools" />
             <category name="containers" />
             <tag name="ground" />
@@ -765,12 +776,11 @@
         </container>
     </group>
     <group name="MI_Building_SeAutoDealer" lootmax="3">
-        <usage name="Town" />
+        <usage name="Industrial" />
         <container name="lootFloor" lootmax="3">
-            <category name="clothes" />
-            <category name="food" />
             <category name="tools" />
             <category name="containers" />
+            <category name="clothes" />
             <tag name="ground" />
             <tag name="floor" />
             <point pos="-14.560 0.180 -8.840" range="0.850" height="1.700" flags="32" />
@@ -984,12 +994,11 @@
         </container>
     </group>
     <group name="MI_Building_StateAirportOperations" lootmax="4">
-        <usage name="Town" />
+        <usage name="Industrial" />
         <container name="lootFloor" lootmax="4">
-            <category name="clothes" />
-            <category name="food" />
             <category name="tools" />
             <category name="containers" />
+            <category name="clothes" />
             <tag name="ground" />
             <tag name="floor" />
             <point pos="-12.480 0.180 -7.800" range="0.850" height="1.700" flags="32" />
@@ -1004,12 +1013,11 @@
         </container>
     </group>
     <group name="MI_Building_StateAirportTerminal" lootmax="4">
-        <usage name="Town" />
+        <usage name="Industrial" />
         <container name="lootFloor" lootmax="4">
-            <category name="clothes" />
-            <category name="food" />
             <category name="tools" />
             <category name="containers" />
+            <category name="clothes" />
             <tag name="ground" />
             <tag name="floor" />
             <point pos="-22.360 0.180 -10.920" range="0.850" height="1.700" flags="32" />
@@ -1024,12 +1032,13 @@
         </container>
     </group>
     <group name="MI_Building_StateCampOffice" lootmax="3">
-        <usage name="Office" />
-        <usage name="Town" />
+        <usage name="Hunting" />
+        <usage name="Village" />
         <container name="lootFloor" lootmax="3">
-            <category name="clothes" />
+            <category name="weapons" />
             <category name="food" />
             <category name="tools" />
+            <category name="clothes" />
             <category name="containers" />
             <tag name="ground" />
             <tag name="floor" />
@@ -1041,6 +1050,7 @@
         </container>
     </group>
     <group name="MI_Building_StateChurch" lootmax="4">
+        <usage name="Historical" />
         <usage name="Town" />
         <container name="lootFloor" lootmax="4">
             <category name="clothes" />
@@ -1334,11 +1344,13 @@
         </container>
     </group>
     <group name="MI_Building_StatePrisonAdmin" lootmax="4">
+        <usage name="Prison" />
         <usage name="Police" />
         <container name="lootFloor" lootmax="4">
-            <category name="weapons" />
             <category name="clothes" />
             <category name="tools" />
+            <category name="weapons" />
+            <category name="containers" />
             <tag name="ground" />
             <tag name="floor" />
             <point pos="-12.480 0.180 -8.320" range="0.850" height="1.700" flags="32" />
@@ -1353,11 +1365,13 @@
         </container>
     </group>
     <group name="MI_Building_StatePrisonBlock" lootmax="5">
+        <usage name="Prison" />
         <usage name="Police" />
         <container name="lootFloor" lootmax="5">
-            <category name="weapons" />
             <category name="clothes" />
             <category name="tools" />
+            <category name="weapons" />
+            <category name="containers" />
             <tag name="ground" />
             <tag name="floor" />
             <point pos="-18.720 0.180 -13.520" range="0.850" height="1.700" flags="32" />
@@ -1374,11 +1388,13 @@
         </container>
     </group>
     <group name="MI_Building_StatePrisonGatehouse" lootmax="4">
+        <usage name="Prison" />
         <usage name="Police" />
         <container name="lootFloor" lootmax="4">
-            <category name="weapons" />
             <category name="clothes" />
             <category name="tools" />
+            <category name="weapons" />
+            <category name="containers" />
             <tag name="ground" />
             <tag name="floor" />
             <point pos="-7.800 0.180 -4.680" range="0.850" height="1.700" flags="32" />
@@ -1462,7 +1478,7 @@
         </container>
     </group>
     <group name="MI_Building_StateSchool" lootmax="4">
-        <usage name="Office" />
+        <usage name="School" />
         <usage name="Town" />
         <container name="lootFloor" lootmax="4">
             <category name="clothes" />

@@ -76,6 +76,16 @@ VEHICLE_TARGETS = {
     "VehicleOffroad02": (16, "rural"),
     "VehicleTruck01": (12, "truck"),
 }
+ANIMAL_NOMINALS = {
+    "AmbientFox": 8,
+    "AmbientHare": 12,
+    "AmbientHen": 0,
+    "AnimalBear": 3,
+    "AnimalDeer": 8,
+    "AnimalRoeDeer": 8,
+    "AnimalWildBoar": 6,
+    "AnimalWolf": 4,
+}
 ANIMAL_COUNTS = {
     "bear_territories.xml": 6,
     "wolf_territories.xml": 10,
@@ -190,19 +200,31 @@ def usages_for(kind: str, family: str, zone: str) -> list[str]:
     text = f"{kind} {family} {zone}".lower()
     if any(word in text for word in ("military", "barracks", "army")):
         return ["Military"]
-    if "police" in text or "prison" in text or "correction" in text:
+    if "prison" in text or "correction" in text:
+        return ["Prison", "Police"]
+    if "police" in text:
         return ["Police"]
+    if any(word in text for word in ("research", "laboratory", "biology", "conservation")):
+        return ["Medic", "Industrial", "Office"]
     if any(word in text for word in ("hospital", "clinic", "quarantine", "medical")):
         return ["Medic"]
     if "fire" in text:
         return ["Firefighter", "Industrial"]
+    if any(word in text for word in ("camp", "ranger", "hunting")):
+        return ["Hunting", "Village"]
+    if any(word in text for word in ("marina", "bait", "coast", "carferry")):
+        return ["Coast", "Hunting"]
+    if "school" in text:
+        return ["School", "Town"]
     if any(word in text for word in ("farm", "barn", "grain", "orchard")):
         return ["Farm"]
-    if any(word in text for word in ("factory", "warehouse", "industrial", "utility", "garage", "works", "hangar")):
+    if any(word in text for word in ("airport", "factory", "warehouse", "industrial", "utility", "garage", "works", "hangar", "repair", "dealer", "gas station")):
         return ["Industrial"]
     if any(word in text for word in ("cabin", "cottage", "house", "bungalow", "ranch", "duplex", "residential")):
         return ["Village"]
-    if any(word in text for word in ("school", "library", "office", "court", "hall", "capitol")):
+    if any(word in text for word in ("church", "historic", "heritage", "fort")):
+        return ["Historical", "Town"]
+    if any(word in text for word in ("library", "office", "court", "hall", "capitol")):
         return ["Office", "Town"]
     return ["Town"]
 
@@ -211,10 +233,18 @@ def categories_for(usages: list[str], kind: str) -> list[str]:
     usage = set(usages)
     if "Military" in usage:
         return ["weapons", "clothes", "tools", "containers"]
+    if "Prison" in usage:
+        return ["clothes", "tools", "weapons", "containers"]
     if "Police" in usage:
         return ["weapons", "clothes", "tools"]
     if "Medic" in usage:
         return ["clothes", "tools", "containers"]
+    if "Hunting" in usage:
+        return ["weapons", "food", "tools", "clothes", "containers"]
+    if "Coast" in usage:
+        return ["food", "tools", "containers", "clothes"]
+    if "School" in usage:
+        return ["clothes", "food", "tools", "containers"]
     if "Farm" in usage:
         return ["food", "tools", "containers"]
     if "Industrial" in usage:
@@ -627,6 +657,11 @@ def selected_events(official_events: Path) -> tuple[ET.Element, dict]:
                 minimum.text = str(max(1, min(target // 3, 6)))
             if maximum is not None:
                 maximum.text = str(max(3, min(target // 2 + 2, 12)))
+        if name in ANIMAL_NOMINALS:
+            nominal = event.find("nominal")
+            if nominal is None:
+                raise ValueError(f"Official event {name} has no nominal value")
+            nominal.text = str(ANIMAL_NOMINALS[name])
         root.append(event)
     return root, {"eventDefinitions": len(SELECTED_EVENTS), "names": sorted(SELECTED_EVENTS)}
 
