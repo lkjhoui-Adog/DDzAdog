@@ -77,6 +77,7 @@ FAMILY_PATHS = {
     "mi_dirt_2lane": "MI_Road_Dirt_2Lane",
 }
 TARGET_SCOPES = {
+    "city",
     "city-structure-fill",
     "city-frontage-connector",
     "farmland-dirt",
