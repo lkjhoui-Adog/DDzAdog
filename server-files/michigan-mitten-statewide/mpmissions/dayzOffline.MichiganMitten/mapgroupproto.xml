@@ -1,3 +1,2150 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <prototype>
+    <defaults>
+        <default name="group" lootmax="8" />
+        <default name="container" lootmax="6" />
+        <default name="keepInvalidPoints" enabled="yes" />
+    </defaults>
+    <group name="MI_Building_CentralApartment3f" lootmax="5">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="5">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-9.360 0.180 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="9.360 0.180 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="-9.360 0.180 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="9.360 0.180 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-9.360 3.380 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="9.360 3.380 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="-9.360 3.380 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="9.360 3.380 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 3.380 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-9.360 6.580 -8.320" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_CentralBrickStore2f" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-5.720 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="5.720 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-5.720 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="5.720 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-5.720 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="5.720 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-5.720 3.380 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="5.720 3.380 7.800" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_CentralCourthouseAnnex3f" lootmax="5">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="5">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-11.440 0.180 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="11.440 0.180 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="-11.440 0.180 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="11.440 0.180 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-11.440 3.380 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="11.440 3.380 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="-11.440 3.380 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="11.440 3.380 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 3.380 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-11.440 6.580 -9.360" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_CentralDiner" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-8.840 0.180 -4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="8.840 0.180 -4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="-8.840 0.180 4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="8.840 0.180 4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_CentralFarmhouse" lootmax="4">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-5.200 0.180 -6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="5.200 0.180 -6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="-5.200 0.180 6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="5.200 0.180 6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-5.200 3.380 -6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="5.200 3.380 -6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="-5.200 3.380 6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="5.200 3.380 6.760" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_CentralGrainCoop" lootmax="4">
+        <usage name="Industrial" />
+        <container name="lootFloor" lootmax="4">
+            <category name="tools" />
+            <category name="containers" />
+            <category name="clothes" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-15.080 0.180 -9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 0.180 -9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="-15.080 0.180 9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 0.180 9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-15.080 3.380 -9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 3.380 -9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="-15.080 3.380 9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 3.380 9.880" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_CentralRailWarehouse" lootmax="4">
+        <usage name="Industrial" />
+        <container name="lootFloor" lootmax="4">
+            <category name="tools" />
+            <category name="containers" />
+            <category name="clothes" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-15.080 0.180 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 0.180 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="-15.080 0.180 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 0.180 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-15.080 3.380 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 3.380 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="-15.080 3.380 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 3.380 8.840" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_CentralSmallApartment2f" lootmax="4">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-8.320 0.180 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="8.320 0.180 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="-8.320 0.180 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="8.320 0.180 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-8.320 3.380 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="8.320 3.380 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="-8.320 3.380 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="8.320 3.380 6.240" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_CentralWorkerHouse" lootmax="4">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-3.900 0.180 -5.980" range="0.850" height="1.700" flags="32" />
+            <point pos="3.900 0.180 -5.980" range="0.850" height="1.700" flags="32" />
+            <point pos="-3.900 0.180 5.980" range="0.850" height="1.700" flags="32" />
+            <point pos="3.900 0.180 5.980" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-3.900 3.380 -5.980" range="0.850" height="1.700" flags="32" />
+            <point pos="3.900 3.380 -5.980" range="0.850" height="1.700" flags="32" />
+            <point pos="-3.900 3.380 5.980" range="0.850" height="1.700" flags="32" />
+            <point pos="3.900 3.380 5.980" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_DetArtdecoOffice4f" lootmax="6">
+        <usage name="Office" />
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="6">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-7.800 0.180 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="7.800 0.180 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.800 0.180 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="7.800 0.180 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.800 3.380 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="7.800 3.380 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.800 3.380 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="7.800 3.380 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 3.380 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.800 6.580 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="7.800 6.580 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.800 6.580 8.840" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_DetAutoFactory" lootmax="4">
+        <usage name="Industrial" />
+        <container name="lootFloor" lootmax="4">
+            <category name="tools" />
+            <category name="containers" />
+            <category name="clothes" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-16.120 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="16.120 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="-16.120 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="16.120 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-16.120 3.380 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="16.120 3.380 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="-16.120 3.380 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="16.120 3.380 10.920" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_DetBrickDuplex" lootmax="4">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-4.680 0.180 -6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="4.680 0.180 -6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.680 0.180 6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="4.680 0.180 6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.680 3.380 -6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="4.680 3.380 -6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.680 3.380 6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="4.680 3.380 6.760" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_DetBrickStore2f" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-5.720 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="5.720 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-5.720 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="5.720 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-5.720 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="5.720 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-5.720 3.380 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="5.720 3.380 7.800" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_DetCornerBank3f" lootmax="5">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="5">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-8.840 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="8.840 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-8.840 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="8.840 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-8.840 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="8.840 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-8.840 3.380 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="8.840 3.380 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 3.380 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-8.840 6.580 -7.800" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_DetLoftWarehouse4f" lootmax="6">
+        <usage name="Industrial" />
+        <container name="lootFloor" lootmax="6">
+            <category name="tools" />
+            <category name="containers" />
+            <category name="clothes" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-10.920 0.180 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 0.180 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 3.380 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 3.380 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 3.380 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 3.380 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 3.380 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 6.580 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 6.580 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 6.580 9.360" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_DetServiceAlleyShop" lootmax="3">
+        <usage name="Industrial" />
+        <container name="lootFloor" lootmax="3">
+            <category name="tools" />
+            <category name="containers" />
+            <category name="clothes" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-7.280 0.180 -6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="7.280 0.180 -6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.280 0.180 6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="7.280 0.180 6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_DetWorkerCottage" lootmax="3">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="3">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-3.640 0.180 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="3.640 0.180 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="-3.640 0.180 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="3.640 0.180 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_NorthCedarWorkerHouse" lootmax="4">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-3.640 0.180 -5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="3.640 0.180 -5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="-3.640 0.180 5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="3.640 0.180 5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-3.640 3.380 -5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="3.640 3.380 -5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="-3.640 3.380 5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="3.640 3.380 5.200" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_NorthClapboardStore2f" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-6.240 0.180 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="6.240 0.180 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="-6.240 0.180 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="6.240 0.180 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-6.240 3.380 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="6.240 3.380 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="-6.240 3.380 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="6.240 3.380 7.280" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_NorthCompactBungalow" lootmax="3">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="3">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-3.380 0.180 -4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="3.380 0.180 -4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="-3.380 0.180 4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="3.380 0.180 4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_NorthCompactWorkerCottage" lootmax="3">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="3">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-2.500 0.180 -4.160" range="0.850" height="1.700" flags="32" />
+            <point pos="2.500 0.180 -4.160" range="0.850" height="1.700" flags="32" />
+            <point pos="-2.500 0.180 4.160" range="0.850" height="1.700" flags="32" />
+            <point pos="2.500 0.180 4.160" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_NorthCornerCafe2f" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-4.160 0.180 -5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="4.160 0.180 -5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.160 0.180 5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="4.160 0.180 5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.160 3.380 -5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="4.160 3.380 -5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.160 3.380 5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="4.160 3.380 5.200" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_NorthLakeCottage" lootmax="3">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="3">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-4.160 0.180 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="4.160 0.180 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.160 0.180 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="4.160 0.180 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_NorthLogCabin" lootmax="3">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="3">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-4.680 0.180 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="4.680 0.180 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.680 0.180 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="4.680 0.180 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_NorthMarinaBait" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-8.840 0.180 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="8.840 0.180 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="-8.840 0.180 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="8.840 0.180 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_NorthMotel" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-16.640 0.180 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="16.640 0.180 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="-16.640 0.180 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="16.640 0.180 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-16.640 3.380 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="16.640 3.380 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="-16.640 3.380 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="16.640 3.380 5.720" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_NorthNarrowMainStreetShop" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-3.120 0.180 -5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="3.120 0.180 -5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="-3.120 0.180 5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="3.120 0.180 5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-3.120 3.380 -5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="3.120 3.380 -5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="-3.120 3.380 5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="3.120 3.380 5.200" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_NorthSkiLodge" lootmax="5">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="5">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-12.480 0.180 -9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="12.480 0.180 -9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="-12.480 0.180 9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="12.480 0.180 9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-12.480 3.380 -9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="12.480 3.380 -9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="-12.480 3.380 9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="12.480 3.380 9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 3.380 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-12.480 6.580 -9.880" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_NorthStoneHotel3f" lootmax="5">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="5">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-10.920 0.180 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 0.180 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 3.380 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 3.380 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 3.380 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 3.380 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 3.380 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 6.580 -8.840" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_NorthTinyMainStreetShop" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-2.500 0.180 -4.160" range="0.850" height="1.700" flags="32" />
+            <point pos="2.500 0.180 -4.160" range="0.850" height="1.700" flags="32" />
+            <point pos="-2.500 0.180 4.160" range="0.850" height="1.700" flags="32" />
+            <point pos="2.500 0.180 4.160" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-2.500 3.380 -4.160" range="0.850" height="1.700" flags="32" />
+            <point pos="2.500 3.380 -4.160" range="0.850" height="1.700" flags="32" />
+            <point pos="-2.500 3.380 4.160" range="0.850" height="1.700" flags="32" />
+            <point pos="2.500 3.380 4.160" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_NorthUpstairsFlat3f" lootmax="5">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="5">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-4.160 0.180 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="4.160 0.180 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.160 0.180 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="4.160 0.180 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.160 3.380 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="4.160 3.380 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.160 3.380 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="4.160 3.380 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 3.380 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.160 6.580 -5.720" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_NorthVictorianHouse" lootmax="4">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-5.200 0.180 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="5.200 0.180 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="-5.200 0.180 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="5.200 0.180 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-5.200 3.380 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="5.200 3.380 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="-5.200 3.380 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="5.200 3.380 6.240" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_NorthVictorianInn" lootmax="5">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="5">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-8.840 0.180 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="8.840 0.180 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="-8.840 0.180 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="8.840 0.180 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-8.840 3.380 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="8.840 3.380 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="-8.840 3.380 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="8.840 3.380 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 3.380 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-8.840 6.580 -8.320" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_ResearchBiologyLab" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-11.960 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="11.960 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-11.960 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="11.960 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-11.960 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="11.960 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-11.960 3.380 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="11.960 3.380 7.800" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_ResearchCanadaConservationLab" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-14.040 0.180 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="14.040 0.180 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="-14.040 0.180 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="14.040 0.180 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-14.040 3.380 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="14.040 3.380 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="-14.040 3.380 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="14.040 3.380 9.360" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_ResearchDormitory" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-10.920 0.180 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 0.180 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 3.380 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 3.380 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 3.380 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 3.380 6.240" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_ResearchMichiganForestLab" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-14.040 0.180 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="14.040 0.180 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="-14.040 0.180 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="14.040 0.180 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-14.040 3.380 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="14.040 3.380 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="-14.040 3.380 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="14.040 3.380 9.360" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_ResearchQuarantineWard" lootmax="3">
+        <usage name="Medic" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-11.440 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="11.440 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-11.440 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="11.440 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_ResearchUtilityBuilding" lootmax="3">
+        <usage name="Industrial" />
+        <container name="lootFloor" lootmax="3">
+            <category name="tools" />
+            <category name="containers" />
+            <category name="clothes" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-8.840 0.180 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="8.840 0.180 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="-8.840 0.180 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="8.840 0.180 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_ResearchWisconsinFieldStation" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-13.520 0.180 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="13.520 0.180 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="-13.520 0.180 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="13.520 0.180 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-13.520 3.380 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="13.520 3.380 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="-13.520 3.380 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="13.520 3.380 9.360" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_SeAutoDealer" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-14.560 0.180 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="14.560 0.180 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="-14.560 0.180 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="14.560 0.180 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_SeBungalow" lootmax="4">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-4.160 0.180 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="4.160 0.180 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.160 0.180 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="4.160 0.180 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.160 3.380 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="4.160 3.380 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.160 3.380 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="4.160 3.380 6.240" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_SeCivicAnnex3f" lootmax="5">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="5">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-10.920 0.180 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 0.180 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 3.380 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 3.380 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 3.380 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 3.380 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 3.380 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 6.580 -8.840" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_SeColonial" lootmax="4">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-4.680 0.180 -5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="4.680 0.180 -5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.680 0.180 5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="4.680 0.180 5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.680 3.380 -5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="4.680 3.380 -5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.680 3.380 5.200" range="0.850" height="1.700" flags="32" />
+            <point pos="4.680 3.380 5.200" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_SeCornerPharmacy2f" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-7.800 0.180 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="7.800 0.180 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.800 0.180 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="7.800 0.180 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.800 3.380 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="7.800 3.380 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.800 3.380 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="7.800 3.380 7.280" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_SeFireStation" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-12.480 0.180 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="12.480 0.180 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="-12.480 0.180 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="12.480 0.180 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_SeMixeduse3f" lootmax="5">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="5">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-7.280 0.180 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="7.280 0.180 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.280 0.180 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="7.280 0.180 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.280 3.380 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="7.280 3.380 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.280 3.380 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="7.280 3.380 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 3.380 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.280 6.580 -8.320" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_SeRanch" lootmax="3">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="3">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-6.240 0.180 -4.160" range="0.850" height="1.700" flags="32" />
+            <point pos="6.240 0.180 -4.160" range="0.850" height="1.700" flags="32" />
+            <point pos="-6.240 0.180 4.160" range="0.850" height="1.700" flags="32" />
+            <point pos="6.240 0.180 4.160" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_SeSplitLevel" lootmax="4">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-5.720 0.180 -4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="5.720 0.180 -4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="-5.720 0.180 4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="5.720 0.180 4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-5.720 3.380 -4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="5.720 3.380 -4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="-5.720 3.380 4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="5.720 3.380 4.680" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_SeStripMall" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-18.720 0.180 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="18.720 0.180 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="-18.720 0.180 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="18.720 0.180 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_SeSuburbanApartment3f" lootmax="5">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="5">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-10.920 0.180 -6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 -6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 0.180 6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 3.380 -6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 3.380 -6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 3.380 6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 3.380 6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 3.380 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 6.580 -6.760" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateAirportHangar" lootmax="3">
+        <usage name="Industrial" />
+        <container name="lootFloor" lootmax="3">
+            <category name="tools" />
+            <category name="containers" />
+            <category name="clothes" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-18.720 0.180 -12.480" range="0.850" height="1.700" flags="32" />
+            <point pos="18.720 0.180 -12.480" range="0.850" height="1.700" flags="32" />
+            <point pos="-18.720 0.180 12.480" range="0.850" height="1.700" flags="32" />
+            <point pos="18.720 0.180 12.480" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateAirportOperations" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-12.480 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="12.480 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-12.480 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="12.480 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-12.480 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="12.480 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-12.480 3.380 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="12.480 3.380 7.800" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateAirportTerminal" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-22.360 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="22.360 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="-22.360 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="22.360 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-22.360 3.380 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="22.360 3.380 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="-22.360 3.380 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="22.360 3.380 10.920" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateCampOffice" lootmax="3">
+        <usage name="Office" />
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-7.800 0.180 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="7.800 0.180 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.800 0.180 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="7.800 0.180 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateChurch" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-6.240 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="6.240 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="-6.240 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="6.240 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-6.240 3.380 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="6.240 3.380 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="-6.240 3.380 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="6.240 3.380 10.920" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateClinic" lootmax="4">
+        <usage name="Medic" />
+        <container name="lootFloor" lootmax="4">
+            <category name="clothes" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-9.880 0.180 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="9.880 0.180 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="-9.880 0.180 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="9.880 0.180 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-9.880 3.380 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="9.880 3.380 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="-9.880 3.380 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="9.880 3.380 7.280" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateFarmService" lootmax="3">
+        <usage name="Farm" />
+        <container name="lootFloor" lootmax="3">
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-12.480 0.180 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="12.480 0.180 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="-12.480 0.180 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="12.480 0.180 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateFireStation" lootmax="3">
+        <usage name="Firefighter" />
+        <usage name="Industrial" />
+        <container name="lootFloor" lootmax="3">
+            <category name="tools" />
+            <category name="containers" />
+            <category name="clothes" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-12.480 0.180 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="12.480 0.180 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="-12.480 0.180 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="12.480 0.180 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateGasStation" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-7.800 0.180 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="7.800 0.180 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.800 0.180 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="7.800 0.180 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateGrocery" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-11.440 0.180 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="11.440 0.180 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="-11.440 0.180 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="11.440 0.180 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateHardware" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-8.840 0.180 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="8.840 0.180 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="-8.840 0.180 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="8.840 0.180 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateHospital" lootmax="6">
+        <usage name="Medic" />
+        <container name="lootFloor" lootmax="6">
+            <category name="clothes" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-10.920 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 3.380 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 3.380 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 3.380 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 6.580 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 6.580 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 6.580 7.800" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateLibrary" lootmax="4">
+        <usage name="Office" />
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-10.920 0.180 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 0.180 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 3.380 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 3.380 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 3.380 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 3.380 8.320" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateMilitaryAdmin" lootmax="4">
+        <usage name="Military" />
+        <container name="lootFloor" lootmax="4">
+            <category name="weapons" />
+            <category name="clothes" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-13.000 0.180 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="13.000 0.180 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="-13.000 0.180 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="13.000 0.180 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-13.000 3.380 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="13.000 3.380 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="-13.000 3.380 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="13.000 3.380 8.840" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateMilitaryBarracks" lootmax="4">
+        <usage name="Military" />
+        <container name="lootFloor" lootmax="4">
+            <category name="weapons" />
+            <category name="clothes" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-16.120 0.180 -6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="16.120 0.180 -6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="-16.120 0.180 6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="16.120 0.180 6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-16.120 3.380 -6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="16.120 3.380 -6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="-16.120 3.380 6.760" range="0.850" height="1.700" flags="32" />
+            <point pos="16.120 3.380 6.760" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateMunicipalCourt" lootmax="5">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="5">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-10.920 0.180 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 0.180 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 3.380 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 3.380 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 3.380 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 3.380 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 3.380 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 6.580 -8.320" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StatePoleBarn" lootmax="3">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="3">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-9.880 0.180 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="9.880 0.180 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="-9.880 0.180 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="9.880 0.180 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StatePoliceStation" lootmax="4">
+        <usage name="Police" />
+        <container name="lootFloor" lootmax="4">
+            <category name="weapons" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-10.400 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="10.400 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.400 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="10.400 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.400 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="10.400 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.400 3.380 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="10.400 3.380 7.800" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StatePostOffice" lootmax="4">
+        <usage name="Office" />
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-10.920 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 3.380 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 3.380 7.800" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StatePowerSubstation" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-13.520 0.180 -11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="13.520 0.180 -11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="-13.520 0.180 11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="13.520 0.180 11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StatePrisonAdmin" lootmax="4">
+        <usage name="Police" />
+        <container name="lootFloor" lootmax="4">
+            <category name="weapons" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-12.480 0.180 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="12.480 0.180 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="-12.480 0.180 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="12.480 0.180 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-12.480 3.380 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="12.480 3.380 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="-12.480 3.380 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="12.480 3.380 8.320" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StatePrisonBlock" lootmax="5">
+        <usage name="Police" />
+        <container name="lootFloor" lootmax="5">
+            <category name="weapons" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-18.720 0.180 -13.520" range="0.850" height="1.700" flags="32" />
+            <point pos="18.720 0.180 -13.520" range="0.850" height="1.700" flags="32" />
+            <point pos="-18.720 0.180 13.520" range="0.850" height="1.700" flags="32" />
+            <point pos="18.720 0.180 13.520" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-18.720 3.380 -13.520" range="0.850" height="1.700" flags="32" />
+            <point pos="18.720 3.380 -13.520" range="0.850" height="1.700" flags="32" />
+            <point pos="-18.720 3.380 13.520" range="0.850" height="1.700" flags="32" />
+            <point pos="18.720 3.380 13.520" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 3.380 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-18.720 6.580 -13.520" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StatePrisonGatehouse" lootmax="4">
+        <usage name="Police" />
+        <container name="lootFloor" lootmax="4">
+            <category name="weapons" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-7.800 0.180 -4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="7.800 0.180 -4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.800 0.180 4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="7.800 0.180 4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.800 3.380 -4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="7.800 3.380 -4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.800 3.380 4.680" range="0.850" height="1.700" flags="32" />
+            <point pos="7.800 3.380 4.680" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StatePub" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-7.280 0.180 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="7.280 0.180 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.280 0.180 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="7.280 0.180 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.280 3.380 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="7.280 3.380 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.280 3.380 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="7.280 3.380 7.280" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StatePublicWorks" lootmax="3">
+        <usage name="Industrial" />
+        <container name="lootFloor" lootmax="3">
+            <category name="tools" />
+            <category name="containers" />
+            <category name="clothes" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-13.000 0.180 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="13.000 0.180 -8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="-13.000 0.180 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="13.000 0.180 8.840" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateRailDepot" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-11.440 0.180 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="11.440 0.180 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="-11.440 0.180 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="11.440 0.180 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-11.440 3.380 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="11.440 3.380 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="-11.440 3.380 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="11.440 3.380 5.720" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateRepairGarage" lootmax="3">
+        <usage name="Industrial" />
+        <container name="lootFloor" lootmax="3">
+            <category name="tools" />
+            <category name="containers" />
+            <category name="clothes" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-8.840 0.180 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="8.840 0.180 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="-8.840 0.180 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="8.840 0.180 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateSchool" lootmax="4">
+        <usage name="Office" />
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-15.080 0.180 -9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 0.180 -9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="-15.080 0.180 9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 0.180 9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-15.080 3.380 -9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 3.380 -9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="-15.080 3.380 9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 3.380 9.880" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateSupermarket" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-11.440 0.180 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="11.440 0.180 -7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="-11.440 0.180 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="11.440 0.180 7.280" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateTownshipHall" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-9.880 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="9.880 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-9.880 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="9.880 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-9.880 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="9.880 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-9.880 3.380 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="9.880 3.380 7.800" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_StateUtilityWorks" lootmax="3">
+        <usage name="Industrial" />
+        <container name="lootFloor" lootmax="3">
+            <category name="tools" />
+            <category name="containers" />
+            <category name="clothes" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-10.920 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-10.920 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="10.920 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_WestCraftsman" lootmax="4">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-4.680 0.180 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="4.680 0.180 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.680 0.180 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="4.680 0.180 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.680 3.380 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="4.680 3.380 -6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.680 3.380 6.240" range="0.850" height="1.700" flags="32" />
+            <point pos="4.680 3.380 6.240" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_WestCraftsmanMixed2f" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-7.280 0.180 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="7.280 0.180 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.280 0.180 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="7.280 0.180 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.280 3.380 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="7.280 3.380 -8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="-7.280 3.380 8.320" range="0.850" height="1.700" flags="32" />
+            <point pos="7.280 3.380 8.320" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_WestDutchColonial" lootmax="4">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-4.940 0.180 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="4.940 0.180 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.940 0.180 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="4.940 0.180 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.940 3.380 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="4.940 3.380 -5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="-4.940 3.380 5.720" range="0.850" height="1.700" flags="32" />
+            <point pos="4.940 3.380 5.720" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_WestDutchGableStore2f" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-6.240 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="6.240 0.180 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-6.240 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="6.240 0.180 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-6.240 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="6.240 3.380 -7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="-6.240 3.380 7.800" range="0.850" height="1.700" flags="32" />
+            <point pos="6.240 3.380 7.800" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_WestFurnitureFactory" lootmax="5">
+        <usage name="Industrial" />
+        <container name="lootFloor" lootmax="5">
+            <category name="tools" />
+            <category name="containers" />
+            <category name="clothes" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-16.640 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="16.640 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="-16.640 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="16.640 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-16.640 3.380 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="16.640 3.380 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="-16.640 3.380 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="16.640 3.380 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 3.380 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-16.640 6.580 -10.920" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_WestMarketHall" lootmax="4">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="4">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-13.520 0.180 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="13.520 0.180 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="-13.520 0.180 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="13.520 0.180 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-13.520 3.380 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="13.520 3.380 -9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="-13.520 3.380 9.360" range="0.850" height="1.700" flags="32" />
+            <point pos="13.520 3.380 9.360" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_WestRanch" lootmax="3">
+        <usage name="Village" />
+        <container name="lootFloor" lootmax="3">
+            <category name="food" />
+            <category name="clothes" />
+            <category name="tools" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-6.240 0.180 -4.160" range="0.850" height="1.700" flags="32" />
+            <point pos="6.240 0.180 -4.160" range="0.850" height="1.700" flags="32" />
+            <point pos="-6.240 0.180 4.160" range="0.850" height="1.700" flags="32" />
+            <point pos="6.240 0.180 4.160" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Building_WestRiverWarehouse" lootmax="4">
+        <usage name="Industrial" />
+        <container name="lootFloor" lootmax="4">
+            <category name="tools" />
+            <category name="containers" />
+            <category name="clothes" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-14.040 0.180 -9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="14.040 0.180 -9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="-14.040 0.180 9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="14.040 0.180 9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+            <point pos="-14.040 3.380 -9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="14.040 3.380 -9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="-14.040 3.380 9.880" range="0.850" height="1.700" flags="32" />
+            <point pos="14.040 3.380 9.880" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_Alpena_MaritimeExchange" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-15.080 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="-15.080 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_AnnArbor_CampusClockHall" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-21.320 0.180 -15.080" range="0.850" height="1.700" flags="32" />
+            <point pos="21.320 0.180 -15.080" range="0.850" height="1.700" flags="32" />
+            <point pos="-21.320 0.180 15.080" range="0.850" height="1.700" flags="32" />
+            <point pos="21.320 0.180 15.080" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_BattleCreek_CerealWorks" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-24.440 0.180 -16.120" range="0.850" height="1.700" flags="32" />
+            <point pos="24.440 0.180 -16.120" range="0.850" height="1.700" flags="32" />
+            <point pos="-24.440 0.180 16.120" range="0.850" height="1.700" flags="32" />
+            <point pos="24.440 0.180 16.120" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_BayCity_HistoricCivicHall" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-18.720 0.180 -13.520" range="0.850" height="1.700" flags="32" />
+            <point pos="18.720 0.180 -13.520" range="0.850" height="1.700" flags="32" />
+            <point pos="-18.720 0.180 13.520" range="0.850" height="1.700" flags="32" />
+            <point pos="18.720 0.180 13.520" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_BentonHarbor_ArtsMarket" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-15.600 0.180 -11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="15.600 0.180 -11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="-15.600 0.180 11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="15.600 0.180 11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_BigRapids_RiverMillHall" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-15.600 0.180 -11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="15.600 0.180 -11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="-15.600 0.180 11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="15.600 0.180 11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_Cadillac_LakeDepot" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-16.120 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="16.120 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="-16.120 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="16.120 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_Detroit_RenaissanceCenter" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-41.600 0.180 -31.200" range="0.850" height="1.700" flags="32" />
+            <point pos="41.600 0.180 -31.200" range="0.850" height="1.700" flags="32" />
+            <point pos="-41.600 0.180 31.200" range="0.850" height="1.700" flags="32" />
+            <point pos="41.600 0.180 31.200" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_Flint_VehicleCityWorks" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-27.040 0.180 -18.720" range="0.850" height="1.700" flags="32" />
+            <point pos="27.040 0.180 -18.720" range="0.850" height="1.700" flags="32" />
+            <point pos="-27.040 0.180 18.720" range="0.850" height="1.700" flags="32" />
+            <point pos="27.040 0.180 18.720" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_Gaylord_AlpineHall" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-15.080 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="-15.080 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_GrandRapids_RiverfrontMarketTower" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-27.560 0.180 -19.240" range="0.850" height="1.700" flags="32" />
+            <point pos="27.560 0.180 -19.240" range="0.850" height="1.700" flags="32" />
+            <point pos="-27.560 0.180 19.240" range="0.850" height="1.700" flags="32" />
+            <point pos="27.560 0.180 19.240" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_Grayling_ForestryDepot" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-14.560 0.180 -10.400" range="0.850" height="1.700" flags="32" />
+            <point pos="14.560 0.180 -10.400" range="0.850" height="1.700" flags="32" />
+            <point pos="-14.560 0.180 10.400" range="0.850" height="1.700" flags="32" />
+            <point pos="14.560 0.180 10.400" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_Holland_WindmillMarket" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-15.600 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="15.600 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="-15.600 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="15.600 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_Hometown_FreedomHill" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-43.680 0.180 -32.240" range="0.850" height="1.700" flags="32" />
+            <point pos="43.680 0.180 -32.240" range="0.850" height="1.700" flags="32" />
+            <point pos="-43.680 0.180 32.240" range="0.850" height="1.700" flags="32" />
+            <point pos="43.680 0.180 32.240" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_Hometown_PartridgeCreek" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-47.840 0.180 -29.120" range="0.850" height="1.700" flags="32" />
+            <point pos="47.840 0.180 -29.120" range="0.850" height="1.700" flags="32" />
+            <point pos="-47.840 0.180 29.120" range="0.850" height="1.700" flags="32" />
+            <point pos="47.840 0.180 29.120" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_Jackson_UnionRailTerminal" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-22.360 0.180 -15.080" range="0.850" height="1.700" flags="32" />
+            <point pos="22.360 0.180 -15.080" range="0.850" height="1.700" flags="32" />
+            <point pos="-22.360 0.180 15.080" range="0.850" height="1.700" flags="32" />
+            <point pos="22.360 0.180 15.080" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_Kalamazoo_HeritageTheater" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-19.240 0.180 -14.040" range="0.850" height="1.700" flags="32" />
+            <point pos="19.240 0.180 -14.040" range="0.850" height="1.700" flags="32" />
+            <point pos="-19.240 0.180 14.040" range="0.850" height="1.700" flags="32" />
+            <point pos="19.240 0.180 14.040" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_Lansing_StateCapitol" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-26.520 0.180 -18.720" range="0.850" height="1.700" flags="32" />
+            <point pos="26.520 0.180 -18.720" range="0.850" height="1.700" flags="32" />
+            <point pos="-26.520 0.180 18.720" range="0.850" height="1.700" flags="32" />
+            <point pos="26.520 0.180 18.720" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_Ludington_CarferryTerminal" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-16.120 0.180 -11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="16.120 0.180 -11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="-16.120 0.180 11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="16.120 0.180 11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_MackinawCity_StraitsFort" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-15.080 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="-15.080 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_Manistee_VictorianRiverHall" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-15.080 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 0.180 -10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="-15.080 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="15.080 0.180 10.920" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_Midland_ModernistResearchCampus" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-25.480 0.180 -17.160" range="0.850" height="1.700" flags="32" />
+            <point pos="25.480 0.180 -17.160" range="0.850" height="1.700" flags="32" />
+            <point pos="-25.480 0.180 17.160" range="0.850" height="1.700" flags="32" />
+            <point pos="25.480 0.180 17.160" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_Monroe_RiverRaisinArsenal" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-15.600 0.180 -11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="15.600 0.180 -11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="-15.600 0.180 11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="15.600 0.180 11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_MountPleasant_CentralHall" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-16.120 0.180 -11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="16.120 0.180 -11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="-16.120 0.180 11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="16.120 0.180 11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_Muskegon_LakePortFoundry" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-25.480 0.180 -17.680" range="0.850" height="1.700" flags="32" />
+            <point pos="25.480 0.180 -17.680" range="0.850" height="1.700" flags="32" />
+            <point pos="-25.480 0.180 17.680" range="0.850" height="1.700" flags="32" />
+            <point pos="25.480 0.180 17.680" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_Petoskey_StoneResortHotel" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-16.120 0.180 -11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="16.120 0.180 -11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="-16.120 0.180 11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="16.120 0.180 11.440" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_PortHuron_CustomsFreightTerminal" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-16.640 0.180 -11.960" range="0.850" height="1.700" flags="32" />
+            <point pos="16.640 0.180 -11.960" range="0.850" height="1.700" flags="32" />
+            <point pos="-16.640 0.180 11.960" range="0.850" height="1.700" flags="32" />
+            <point pos="16.640 0.180 11.960" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_Saginaw_CastleCivicHall" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-19.760 0.180 -14.040" range="0.850" height="1.700" flags="32" />
+            <point pos="19.760 0.180 -14.040" range="0.850" height="1.700" flags="32" />
+            <point pos="-19.760 0.180 14.040" range="0.850" height="1.700" flags="32" />
+            <point pos="19.760 0.180 14.040" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
+    <group name="MI_Landmark_TraverseCity_StateTheaterMarket" lootmax="3">
+        <usage name="Town" />
+        <container name="lootFloor" lootmax="3">
+            <category name="clothes" />
+            <category name="food" />
+            <category name="tools" />
+            <category name="containers" />
+            <tag name="ground" />
+            <tag name="floor" />
+            <point pos="-21.840 0.180 -15.080" range="0.850" height="1.700" flags="32" />
+            <point pos="21.840 0.180 -15.080" range="0.850" height="1.700" flags="32" />
+            <point pos="-21.840 0.180 15.080" range="0.850" height="1.700" flags="32" />
+            <point pos="21.840 0.180 15.080" range="0.850" height="1.700" flags="32" />
+            <point pos="0.000 0.180 0.000" range="0.850" height="1.700" flags="32" />
+        </container>
+    </group>
 </prototype>

@@ -1,3 +1,103 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <territory-type>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="40675.201" z="28998.831" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="40795.201" z="28918.831" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="40535.201" z="29093.831" r="220" />
+    </territory>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="4545.305" z="39912.354" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="4665.305" z="39832.354" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="4405.305" z="40007.354" r="220" />
+    </territory>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="40664.046" z="37043.884" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="40784.046" z="36963.884" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="40524.046" z="37138.884" r="220" />
+    </territory>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="2456.510" z="37603.963" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2576.510" z="37523.963" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2316.510" z="37698.963" r="220" />
+    </territory>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="1175.717" z="35823.649" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1295.717" z="35743.649" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1035.717" z="35918.649" r="220" />
+    </territory>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="5450.926" z="40616.923" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="5570.926" z="40536.923" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="5310.926" z="40711.923" r="220" />
+    </territory>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="2075.319" z="36917.434" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2195.319" z="36837.434" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1935.319" z="37012.434" r="220" />
+    </territory>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="619.494" z="35378.366" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="739.494" z="35298.366" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="479.494" z="35473.366" r="220" />
+    </territory>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="38841.981" z="40578.535" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="38961.981" z="40498.535" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="38701.981" z="40673.535" r="220" />
+    </territory>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="40015.179" z="38485.569" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="40135.179" z="38405.569" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="39875.179" z="38580.569" r="220" />
+    </territory>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="39608.408" z="39165.911" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="39728.408" z="39085.911" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="39468.408" z="39260.911" r="220" />
+    </territory>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="40148.748" z="28120.276" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="40268.748" z="28040.276" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="40008.748" z="28215.276" r="220" />
+    </territory>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="3966.878" z="39110.349" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="4086.878" z="39030.349" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="3826.878" z="39205.349" r="220" />
+    </territory>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="39470.280" z="26080.121" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="39590.280" z="26000.121" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="39330.280" z="26175.121" r="220" />
+    </territory>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="40103.265" z="25835.447" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="40223.265" z="25755.447" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="39963.265" z="25930.447" r="220" />
+    </territory>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="39568.615" z="27015.016" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="39688.615" z="26935.016" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="39428.615" z="27110.016" r="220" />
+    </territory>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="40646.001" z="29876.182" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="40766.001" z="29796.182" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="40506.001" z="29971.182" r="220" />
+    </territory>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="1874.240" z="36171.838" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1994.240" z="36091.838" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1734.240" z="36266.838" r="220" />
+    </territory>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="39006.562" z="39941.874" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="39126.562" z="39861.874" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="38866.562" z="40036.874" r="220" />
+    </territory>
+    <territory color="4288445520">
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="40629.280" z="36051.371" r="150" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="40749.280" z="35971.371" r="260" />
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="40489.280" z="36146.371" r="220" />
+    </territory>
 </territory-type>
