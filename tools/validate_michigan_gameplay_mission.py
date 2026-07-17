@@ -151,6 +151,29 @@ def main() -> int:
     if "Hometown" not in spawn_groups:
         errors.append("Fresh player spawns are not grouped at Hometown")
 
+    effect_path = mission / "cfgeffectarea.json"
+    if effect_path.is_file():
+        try:
+            effect_config = json.loads(effect_path.read_text(encoding="utf-8-sig"))
+            if effect_config.get("Areas") or effect_config.get("SafePositions"):
+                errors.append("Mission contains inherited Chernarus contaminated-area coordinates")
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            pass
+
+    environment_path = mission / "cfgenvironment.xml"
+    if environment_path.is_file():
+        try:
+            environment_root = ET.parse(environment_path).getroot()
+            environment_paths = [
+                str(item.attrib.get("path", ""))
+                for item in environment_root.findall("./territories/file")
+            ]
+            duplicates = sorted({path for path in environment_paths if environment_paths.count(path) > 1})
+            if duplicates:
+                errors.append(f"Environment contains duplicate territory file references: {duplicates}")
+        except ET.ParseError:
+            pass
+
     report = {
         "status": "valid" if not errors else "invalid",
         "missionDirectory": str(mission),

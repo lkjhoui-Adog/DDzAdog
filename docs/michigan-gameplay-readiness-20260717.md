@@ -9,6 +9,8 @@
 - Previous mission and persistence are archived at `archives/pre-gameplay-ce-install-20260717-150749`.
 - The initial generic-loot CE pass is additionally archived at `archives/pre-gameplay-ce-install-20260717-153010`.
 - The category-specific pre-wildlife-tuning pass is archived at `archives/pre-gameplay-ce-install-20260717-153618`.
+- The wildlife-tuned pre-contamination-sanitizing pass is archived at `archives/pre-gameplay-ce-install-20260717-154324`.
+- The contamination-sanitized pre-environment-deduplication pass is archived at `archives/pre-gameplay-ce-install-20260717-154722`.
 
 ## Central Economy population
 
@@ -23,6 +25,8 @@
 - 28 land-verified helicopter crash candidates.
 - Six fresh-player spawn bubbles centered on Hometown.
 - Dedicated usage tags now distinguish police, prison, military, medical/scientific, industrial, school, historical, hunting, coastal, farm, town, and residential loot areas.
+- Inherited Chernarus Rify/Pavlovo contaminated-area coordinates and safe positions are disabled pending deliberate Michigan-specific hazard design.
+- Environment territory files are referenced exactly once; the inherited duplicate hare-territory load is removed.
 
 ## Conservative first-test limits
 

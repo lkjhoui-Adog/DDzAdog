@@ -15,6 +15,7 @@ from embed_michigan_roads_in_wrp import HeightGrid, locate_object_section_withou
 WORLD_SIZE = 40960.0
 LAND_THRESHOLD = 1.0
 EXPECTED_ROOTS = {
+    "cfgenvironment.xml": "env",
     "mapgroupproto.xml": "prototype",
     "mapgrouppos.xml": "map",
     "mapgroupcluster.xml": "map",
@@ -135,6 +136,33 @@ def main() -> int:
         if root.tag != expected_root:
             errors.append(f"Wrong root in {relative}: {root.tag}, expected {expected_root}")
         parsed[relative] = root
+
+    effect_path = root_dir / "cfgeffectarea.json"
+    if not effect_path.is_file():
+        errors.append("Missing CE file: cfgeffectarea.json")
+    else:
+        try:
+            effect_config = json.loads(effect_path.read_text(encoding="utf-8-sig"))
+        except (json.JSONDecodeError, UnicodeDecodeError) as exc:
+            errors.append(f"Invalid cfgeffectarea.json: {exc}")
+        else:
+            if effect_config.get("Areas"):
+                errors.append("Michigan CE contains inherited static contaminated areas")
+            if effect_config.get("SafePositions"):
+                errors.append("Michigan CE contains inherited contaminated-area safe positions")
+
+    environment_root = parsed.get("cfgenvironment.xml")
+    if environment_root is not None:
+        environment_paths = [
+            str(item.attrib.get("path", ""))
+            for item in environment_root.findall("./territories/file")
+        ]
+        duplicates = sorted({path for path in environment_paths if environment_paths.count(path) > 1})
+        if duplicates:
+            errors.append(f"Environment contains duplicate territory file references: {duplicates}")
+        for required in ("env/zombie_territories.xml", "env/hare_territories.xml", "env/fox_territories.xml"):
+            if environment_paths.count(required) != 1:
+                errors.append(f"Environment must reference {required} exactly once")
 
     events_root = parsed.get("db/events.xml")
     event_names: list[str] = []
@@ -328,6 +356,7 @@ def main() -> int:
         "ceDirectory": str(root_dir),
         "wrp": str(args.wrp.resolve()),
         "xmlFiles": len(parsed),
+        "jsonFiles": 1 if effect_path.is_file() else 0,
         "eventDefinitions": len(event_names),
         "eventNominals": event_nominals,
         "eventSpawns": spawn_counts,

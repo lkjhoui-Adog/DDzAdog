@@ -686,6 +686,21 @@ def adjusted_globals(source: Path) -> ET.Element:
     return root
 
 
+def adjusted_environment(source: Path) -> ET.Element:
+    root = ET.parse(source.resolve()).getroot()
+    territories = root.find("territories")
+    if territories is None:
+        raise ValueError("Environment file has no territories node")
+    seen_paths: set[str] = set()
+    for file_node in list(territories.findall("file")):
+        path = str(file_node.attrib.get("path", ""))
+        if path in seen_paths:
+            territories.remove(file_node)
+        else:
+            seen_paths.add(path)
+    return root
+
+
 def empty_map_root() -> ET.Element:
     return ET.Element("map")
 
@@ -723,6 +738,7 @@ def main() -> int:
     official_mission = args.official_mission.resolve()
     events, event_report = selected_events(official_mission / "db" / "events.xml")
     globals_root = adjusted_globals(official_mission / "db" / "globals.xml")
+    environment_root = adjusted_environment(official_mission / "cfgenvironment.xml")
 
     write_xml(output_dir / "mapgroupproto.xml", prototype)
     write_xml(output_dir / "mapgrouppos.xml", positions)
@@ -732,6 +748,8 @@ def main() -> int:
     write_xml(output_dir / "mapgroupdirt.xml", empty_map_root())
     write_xml(output_dir / "cfgeventgroups.xml", empty_event_groups())
     write_xml(output_dir / "cfgeventspawns.xml", event_spawns)
+    write_json(output_dir / "cfgeffectarea.json", {"Areas": [], "SafePositions": []})
+    write_xml(output_dir / "cfgenvironment.xml", environment_root)
     write_xml(output_dir / "db" / "events.xml", events)
     write_xml(output_dir / "db" / "globals.xml", globals_root)
     write_xml(output_dir / "env" / "zombie_territories.xml", zombies)
